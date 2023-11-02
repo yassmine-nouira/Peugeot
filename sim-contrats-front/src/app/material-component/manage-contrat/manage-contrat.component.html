@@ -2,7 +2,7 @@
     <h4><b><span>Importe fichier .xlsx</span></b></h4>
 
     <div class="file">
-        <label><b>Le fichiers doit être en cette forme : Modele - Type de contrat - Durée - Km - PUHT - PUTTC </b></label>
+        <label><b>Le fichiers doit être en cette forme : Marque - Type de contrat  - Durée - Km - Modele - PUHT - PUTTC </b></label>
  
 
         <input matInput  type="file" name="file" class="file-input" required (change)="xlsxImport($event)" 
@@ -32,7 +32,7 @@
 
         
         <ng-container matColumnDef="modelev">
-            <th mat-header-cell *matHeaderCellDef>Modèles Vehicule</th>
+            <th mat-header-cell *matHeaderCellDef>Modèles </th>
             <td mat-cell *matCellDef="let element">{{element.modelev}}</td>
         </ng-container>
 
