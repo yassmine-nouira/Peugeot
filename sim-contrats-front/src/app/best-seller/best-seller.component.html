@@ -3,11 +3,10 @@
         <div class="uk-grid">
             <div class="uk-width-1-1 uk-margin-bottom bold-weight">
                 <span class="title black-color" style="padding: 2%; font-size: 30px; font-weight: bold; padding-left: 0; color: #000;">
-                    CALCUL DE SERVICE COMPLET</span>
+                    CALCULATEUR DE BUDGET POUR VOS CONTRATS DE SERVICES </span>
                 <p class="other-size regular-weight">
-                    Vous pouvez calculer notre offre spéciale en choisissant votre modèle de véhicule, le type de
-                    contrat, la durée de
-                    contrat souhaitée et le kilométrage.
+                    Vous pouvez calculer votre contrat de services en choisissant le modèle de votre véhicule, le type de
+                    contrat, la durée du contrat souhaitée et le kilométrage.
                 </p>
             </div>
         </div>
@@ -18,7 +17,7 @@
                 <div class="uk-grid-small service-price-form" uk-grid>
                     
                     <mat-form-field class="uk-width-1-1">
-                        <label>Modèle Vehicule</label>
+                        <label>Modèle</label>
                         <mat-select [(ngModel)]="mvtarget" (selectionChange)="onSelectModelv($event)" placeholder="--">
                             <mat-option *ngFor="let modelevs of modelev" [value]="modelevs">{{modelevs}}</mat-option>
 
@@ -33,7 +32,7 @@
 
                     </mat-form-field>
                     <mat-form-field class="uk-width-1-2@m uk-width-1-1">
-                        <label> Durée de garantie</label>
+                        <label> Durée </label>
                         <mat-select [(ngModel)]="dureetarget" (selectionChange)="onSelectDureeGarantie($event)"
                             placeholder="--">
                             <mat-option *ngFor="let durees of dureeGarantie" [value]="durees">{{durees}}
@@ -41,7 +40,7 @@
                         </mat-select>
                     </mat-form-field>
                     <mat-form-field class="uk-width-1-2@m uk-width-1-1">
-                        <label>Kilométrage</label>
+                        <label>Km</label>
                         <mat-select [(ngModel)]="ktarget" (selectionChange)="onSelectKm($event)" placeholder="--" >
                             <mat-option *ngFor="let kms of km" [value]="kms">
                                 {{kms | number}}
@@ -76,18 +75,26 @@
                     </div>
                 </div>
 
+                <div class="uk-width-1-1 uk-margin-bottom uk-grid-margin uk-first-column" style="padding-top: 0; padding-bottom: 0;">
+                    <p class="small-size" style="text-align: justify;">
+                        Ces prix sont à titre indicatif et sont valables au moment de l'achat du véhicule.
+STAFIM se réserve le droit de modifier les prix et le contenu sans préavis.
+Pour plus d’informations, consultez votre Point Service PEUGEOT.
+                    </p>
+
+                </div>
 
 
                 <!-- #ACTIVE DIV -->
 
 
             </div>
-            <div class="uk-width-1-2@m uk-width-1-1" style="background-color: #F5F5F5; ">
+            <div class="uk-width-1-2@m uk-width-1-1" style="background-color: #F5F5F5; padding-bottom: 0;">
 
 
                 
                 <div class="contact-form satis-sonrasi-cover">
-                    <div class="span"><span class="title">Laissez vos coordonnées et nous vous appellerons.</span></div>
+                    <div class="span"><span class="title">Merci de laisser vos coordonnées, un conseiller commercial vous contactera.</span></div>
                     <form   [formGroup]="demandeForm" id="ctl00" class="uk-grid-small arti-garanti-satis-sonrasi" uk-grid="">
                        
 
@@ -128,7 +135,7 @@
                         </mat-form-field>
 
                         <mat-form-field apearance="standard" class="uk-width-1-2@m uk-width-1-1">
-                            <mat-label>Mat</mat-label>
+                            <mat-label>Immatriculation</mat-label>
                             <input matInput formControlName="matricule" required type="text">
                             <mat-error *ngIf="demandeForm.controls.matricule.touched && demandeForm.controls.matricule.invalid">
                                 <span *ngIf="demandeForm.controls.matricule.errors.required" >Email is required</span>
@@ -155,6 +162,53 @@
                 </div>
             </div>
         </div>
+
+
+        
+        <div style="display: flex; align-items: center;  justify-content: center; text-align: center; " >
+
+        <div  style="padding-top: 10%; max-width:800px; flex-basis: 40%; margin:0px auto;" >
+            
+            <span style="padding-left: 20px;  font-size: 17px; font-weight: 300px;  color: #000;">
+                L’EXTENSION DE GARANTIE, POUR UNE ROUTE PLUS SURE
+                <br>  </span>
+                <br>  
+            <img src="../assets/img/PAKAGES.jpg"  >
+        </div>
+
+
+        <div  style="padding-top: 10%; max-width: 800px; flex-basis: 40%; order:2; margin:0px auto; " >
+            <span style="padding-right: 10px;  font-size: 17px; font-weight: 300px;  color: #000; text-align: center;">
+                PERSONNALISEZ VOTRE CONTRAT DE SERVICE
+                    <br>
+             <span  class="small-size"  style="font-size: 16px; text-align: justify; color: #787B83;">"Pour moi, il s'agit d'un service sur mesure qui correspond à mes besoins"</span>
+            </span>
+             <img src="../assets/img/ADDITIONAL-COVERAGES.jpg"  >
+        </div>
+           
+        </div>
+
+        <div class="uk-grid">
+            <div class="uk-width-1-1 uk-margin-bottom bold-weight">
+                <span class="title black-color" style=" padding: 2%; font-size: 30px; font-weight: bold; padding-left: 0; color: #000;">
+                    Pourquoi choisir une extension de garantie et/ou un contrat de service
+
+                    Peugeot pour ma voiture ?</span>
+                <p class="other-size regular-weight" style="text-align: justify;">
+                    Un contrat de service ne vous permet pas seulement de répartir les coûts d'entretien de votre Peugeot,
+mais vous offre également des services supplémentaires précieux pour vous faciliter la vie avec votre
+véhicule. La meilleure solution consiste à acheter votre contrat de service en même temps que votre
+voiture afin de la protéger dès le départ. Si vous n'avez pas souscrit de contrat de service lors de l'achat de
+votre voiture, vous pouvez néanmoins le faire à tout moment avant votre premier entretien régulier
+(avant 10 000 Km). Une extension de garantie, en revanche, vous permet de prolonger la garantie du
+fabricant au-delà de sa durée standard, ce qui vous permet de bénéficier de la même protection du
+véhicule que la garantie originale du constructeur pendant deux années supplémentaires. Vous pouvez
+souscrire un contrat d'extension de garantie à tout moment avant l'expiration de la garantie originale du
+constructeur.
+                </p>
+            </div>
+        </div>
+
     </div>
 </section>
 
