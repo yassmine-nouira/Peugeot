@@ -1,0 +1,160 @@
+@import url("../../css/font/fontnew.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    font-family: 'Peugeot New';
+}
+
+ul { list-style-type: none; }
+a { text-decoration: none!important; }
+a:hover { color: inherit!important; }
+/* sizes of fonts 
+*/
+.xxlarge-size { font-size: 28px; }
+.xlarge-size { font-size: 24px; }
+.large-size { font-size: 18px; }
+.medium-size { font-size: 16px; }
+.small-size { font-size: 12px; }
+.xsmall-size { font-size: 11px; }
+.xxsmall-size { font-size: 9px; }
+.other-size { font-size: 14px; }
+/* weight of fonts */
+.bold-weight { font-weight: bold; font-family: 'Peugeot New'; }
+.regular-weight { font-weight: normal; font-family: 'Peugeot New'; }
+/* colors */
+.white-color { color: #fff; }
+.black-color { color: #000; }
+.grey-color { color: #787B80 } 
+/* bgcolors */
+.bg-blue-color { background-color: #00A3E0; }
+/* ICONS */
+i.search-icon { background: url(https://talep.peugeot.com.tr/assets/arti-garanti-assets/icons/search-icon.svg); width: 22px; height: 22px; display: inline-block; }
+i.paper-icon { background: url(https://talep.peugeot.com.tr/assets/arti-garanti-assets/icons/paper-icon.svg) no-repeat; display: inline-block; width: 29px; height: 29px;  }
+i.image-icon { background: url(https://talep.peugeot.com.tr/assets/arti-garanti-assets/icons/image-icon.svg) no-repeat; display: inline-block; width: 29px; height: 29px; }
+i.download-icon { background: url(https://talep.peugeot.com.tr/assets/arti-garanti-assets/icons/download-icon.svg) no-repeat; display: inline-block; width: 29px; height: 29px; }
+/* OTHERS */
+.register-btn { display: inline-block; line-height: 44px; max-width: 143px; width: 100%; text-align:center; }
+.register-btn:hover { background-color: #000; color: #fff!important; }
+.more-btn { font-size: 12px; background-color: #00A3E0; color: #fff; padding: 20px 0;display: inline-block; text-transform: uppercase; max-width: 370px; width: 100%; text-align: center; margin-bottom: 20px;font-weight: bold; }
+.more-btn:hover { background-color: #000; color: #fff!important; }
+.us-border { position: relative; }
+.us-border::after { content: ""; width: 100%; max-width: 147px; height: 4px; position: absolute; background-color: #00A3E0; bottom: 0; display: block;  right: 0;}
+/* MAIN */
+div.promo-shadow { background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.64)); position: absolute; right: 0;left: 0; bottom: 0; height: 497px; z-index: 2; }
+/* div.promo { background: url(../../uploads/promo.jpg) no-repeat center; width: 100%; height: 100vh; position: relative; } */
+div.promo { position: relative; }
+div.promo div.promo-text { margin-bottom: 97px; margin-right: 9%; z-index: 3; position: relative; }
+div.promo div.promo-text a { margin-top: 57px; font-size: 9px; transition: all .2s ease ; }
+div.promo div.promo-text span.promo-title { font-size: 55px; }
+div.promo div.promo-text span { display: block; }
+div.promo .uk-position-bottom-left { z-index: 9999;transform: rotate(-90deg); transform-origin: 0 0; }
+div.promo .uk-position-bottom-left span.title { font-size: 40px; }
+div.promo .uk-slider-nav { position: absolute; bottom: 0; left: 0; right: 0; }
+div.promo div.promo-text a:hover { background-color: #000; color: #fff; }
+
+section.services-form-calc { margin-top: 77px; }
+section.services-form-calc form select { width: 100%; display: block; border: 1px solid #787B80; line-height: 50px; height: 50px; padding: 0 23px; border-radius: 0; appearance: none; background: transparent url(https://talep.peugeot.com.tr/assets/arti-garanti-assets/img/arrow-ico.svg) right 23px center no-repeat; font-family: "Peugeot New"; color:#000;}
+section.services-form-calc form select:focus-visible { outline: transparent; }
+section.services-form-calc input.more-btn { max-width: 180px; font-size: 10px; margin-top: 30px; }
+section.services-form-calc div.services-info { border-top: 10px solid #00A3E0; border-right: 1px solid #787B80;border-left: 1px solid #787B80;border-bottom: 1px solid #787B80; margin-top: 60px; margin-bottom: 50px; padding: 27px 0; }
+section.services-form-calc div.services-info span.subtitle { font-weight: normal; font-size: 14px; display: block; line-height: 17px; color: #787B80; }
+section.services-form-calc div.services-info span.price { font-weight: bold; font-size: 24px; display: block; color: #000; }
+section.services-form-calc div.contact-form { background-color: #F7F7F7; padding: 35px; }
+section.services-form-calc .us-padding-form { padding: 0 35px; margin-top: 40px; margin-bottom: 20px; }
+section.services-form-calc div.contact-form span.title { font-weight: bold; font-size: 24px; color: #000; }
+section.services-form-calc div.contact-form form { margin-top: 50px; }
+ section.services-form-calc div.contact-form form #txtPhone, #ContentPlaceHolder1_ddlCities, #ContentPlaceHolder1_ddlNewBrands, #email, #txtPlaka {color: #787B80 !important;}
+section.services-form-calc div.contact-form form label { font-size: 12px; font-weight: normal; color: #787B80; margin-top: 15px; line-height: 34px; }
+section.services-form-calc div.contact-form form label { font-size: 12px; font-weight: normal; color: #787B80; margin-top: 15px; line-height: 34px; }
+section.services-form-calc div.contact-form form label.error{ color: #fff!important;}
+section.services-form-calc div.contact-form form input[type="text"] { border: none; }
+section.services-form-calc div.contact-form form label sup { color: #ff0000 }
+section.services-form-calc div.contact-form form select { border: none; background-color: #fff; }
+section.services-form-calc div.contact-form form label.uslink { margin-top: 49px; display: flex; justify-content: space-between; }
+section.services-form-calc div.contact-form form label.uslink input { margin-top: 4px; }
+section.services-form-calc div.contact-form form label.uslink a,
+section.services-form-calc div.contact-form form label.uslink { color: #787B80; font-size: 10px; line-height: 18px; }
+section.services-form-calc > div > div:nth-child(1) > div > span {font-weight:bold; font-size:25px;}
+section.services-form-calc #since-year-div{ margin-top: 15px; }
+
+#price-model{margin-bottom: 20px;}
+section.services-form-calc > div > div.uk-grid.uk-margin-medium-top > div:nth-child(1) {
+    margin-top: -63px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    div .promo .uk-position-bottom-left span.title { font-size: 30px; }
+}
+
+@media only screen and (max-width: 1280px)  {
+    .small-size { font-size: 11px; }
+    .us-border::after { max-width: 100%; }
+}
+
+@media only screen and (max-width: 1024px) {
+    section.product table.pay-table th, section.product table.pay-table td { padding: 13px; }
+    div.promo .uk-position-bottom-left span.title { font-size: 20px; }
+}
+
+@media only screen and (max-width: 991px){
+
+    .xxlarge-size { font-size: 14px; }
+    .large-size { font-size: 11px; }
+    .more-btn { font-size: 10px; }
+
+    section.product-list p { margin-bottom: 15px; }
+
+    section.product-list { margin-top: 35px; }
+
+    .xlarge-size { font-size: 15px; }
+    div.promo .uk-position-bottom-left span.title { font-size: 11px; display: none; }
+    div.promo div.promo-text span.promo-title { font-size: 20px; }
+    div.promo .uk-position-bottom-left { bottom:0; }
+    div.promo div.promo-text a { margin-top: 5px; }
+
+    section.product div.ps p { font-size: 11px; }
+    section.product-list article div.uk-text-right { text-align: center!important; }
+    section.services-form-calc > div > div:nth-child(1) > div > span {
+        font-size: 19px;
+    }
+    section.services-form-calc {
+        margin-top: 30px;
+    }
+
+    section.services-form-calc > div > div:nth-child(1) {
+        margin-bottom: -85px!important;
+    }
+    section.services-form-calc input.more-btn {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+    section.services-form-calc > div > div.uk-grid.uk-margin-medium-top > div:nth-child(1) > div > div > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    #price-model {
+        margin-bottom: 0px;
+        font-size: 12px;
+    }
+    section.services-form-calc > div > div.uk-grid.uk-margin-medium-top > div:nth-child(1){
+        margin-top: 0px;
+    }
+    footer {
+        display: block !important;
+    }
+
+    /* div.promo { background: url(../../uploads/P_kamp_genel_600x400.jpg) no-repeat center; width: 100%; height: 400px; position: relative; background-size: cover; } */
+}
+
+@media only screen and (max-width: 600px) {
+    section.services-form-calc a.more-btn { max-width: 100%; }
+    section.services-form-calc div.services-info span.subtitle { font-size: 10px; }
+    section.services-form-calc div.services-info span.price { font-size: 14px; }
+    section.services-form-calc div.services-info { padding: 15px 0; margin-top: 10px; }
+}

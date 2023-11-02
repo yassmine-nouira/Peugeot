@@ -1,0 +1,581 @@
+﻿#contactFormContainer {
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  font-family: 'Peugeot New';
+}
+.satissonrasi > .main-form {
+  padding-top: 145px;
+}
+
+#contactFormContainer.popup-container {
+  width: 800px;
+  margin: 0 auto;
+  height: 625px;
+}
+
+#contactForm {
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 110px;
+  /*POPUP VERSION*/
+}
+
+#contactForm .form-left {
+  float: left;
+  width: 470px;
+  margin-right: 20px;
+  height: 100%;
+}
+
+#contactForm .form-left .car-informations {
+  position: relative;
+  width: 100%;
+  height: 327px;
+}
+
+#contactForm .form-left .car-informations .details {
+  display: block;
+  background: url(../img/detail-mask.png) 0 0 no-repeat;
+  width: 167px;
+  height: 117px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+#contactForm .form-left .car-informations .details h3 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#contactForm .form-left .car-informations .details h2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 23px;
+  padding-bottom: 6px;
+  margin-bottom: 0;
+}
+
+#contactForm .form-left .car-informations .details span {
+  display: block;
+  font-weight: bold;
+}
+
+#contactForm .form-left .car-informations .details .col_g, #contactForm .form-left .car-informations .details .col_l {
+  float: left;
+  width: 50%;
+  height: 30px;
+  border-right: 1px solid #8f96a1;
+  line-height: 16px;
+  color: #fff;
+}
+
+#contactForm .form-left .car-informations .details .col_l {
+  border: 0 none;
+}
+
+#contactForm .form-left .campaign-line {
+  width: 100%;
+  background: url(../img/camp-border.png) #288fb2 left top repeat-x;
+  padding: 20px 30px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#contactForm .form-left .campaign-line p {
+  color: #fff;
+}
+
+#contactForm .form-left .description {
+  width: 100%;
+  font-size: 28px;
+  line-height: 34px;
+  padding: 20px 30px;
+  background: #142032;
+}
+
+#contactForm .form-left .description ul {
+  list-style-type: disc;
+  padding-left: 27px;
+}
+
+#contactForm .form-right {
+  float: left;
+  width: 470px;
+  height: 100%;
+}
+
+#contactForm .form-right .multiple {
+  width: 49%;
+  float: left;
+}
+
+#contactForm .form-right .multiple.clearfix {
+  margin-right: 2%;
+}
+
+#contactForm .thanks {
+  border: 1px solid #288fb2;
+  height: 558px;
+  color: #142032;
+  text-align: center;
+}
+
+#contactForm .thanks h2 {
+  font-size: 18px;
+  padding: 80px 0 0;
+}
+
+#contactForm .thanks h3 {
+  font-size: 24px;
+  padding: 0 0 40px;
+}
+
+#contactForm .thanks p {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0 0 50px 0;
+}
+
+#contactForm .thanks .discover {
+  width: 271px;
+  height: 73px;
+  background: url(../img/discover.png) center 0 no-repeat;
+  display: block;
+  margin: 0 auto;
+}
+
+#contactForm .thanks .discover:hover {
+  background-position: center -73px;
+}
+
+#contactForm .preview {
+  float: left;
+  width: 470px;
+  margin-right: 20px;
+  height: 558px;
+  background: url(../img/preview.jpg) center top no-repeat;
+}
+
+#contactForm .selectboxit-container {
+  width: 100%;
+}
+
+#contactForm .selectboxit-text {
+  font-size: 16px;
+  max-width: 220px !important;
+}
+
+#contactForm select {
+  background-color: #fff;
+  margin: 0 0 1rem;
+}
+
+#contactForm h1 {
+  color: #000;
+  float: right;
+  font-size: 16px;
+  margin: 0 0 10px;
+  width: 470px;
+}
+
+#contactForm .checkboxes {
+  padding: 10px 0 20px 0;
+  position: relative;
+  overflow: inherit;
+  border: 0 none;
+}
+
+#contactForm .checkboxes .validate-box {
+  right: auto;
+  left: 0;
+  top: -20px;
+}
+
+#contactForm .termofuse {
+  width: 92%;
+  color: #000;
+}
+
+#contactForm .termofuse a {
+  color: #000;
+}
+
+#contactForm .selectboxit-container .selectboxit-options {
+  max-height: 270px !important;
+  min-width: 100% !important;
+}
+
+#contactForm.popup {
+  width: 800px;
+}
+
+#contactForm.popup .preview {
+  background-size: contain;
+  height: 451px;
+  margin-left: 20px;
+  width: 360px;
+}
+
+#contactForm.popup .form-left {
+  margin-left: 20px;
+  width: 360px;
+}
+
+#contactForm.popup .form-left .car-informations {
+  height: 250px;
+}
+
+#contactForm.popup .form-left .car-informations img {
+  width: 100%;
+}
+
+#contactForm.popup .form-left .car-informations .details {
+  width: 145px;
+  height: 80px;
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+#contactForm.popup .form-left .car-informations .details h3 {
+  font-size: 13px;
+}
+
+#contactForm.popup .form-left .car-informations .details h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 16px;
+  padding-bottom: 5px;
+}
+
+#contactForm.popup .form-left .description {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+#contactForm.popup .form-right {
+  width: 380px;
+}
+
+#contactForm.popup h1 {
+  width: 380px;
+}
+
+#contactForm.popup h1.car-title {
+  width: 400px;
+}
+
+#contactForm.popup .termofuse {
+  width: 90%;
+}
+
+.validate-box {
+  background: red none repeat scroll 0 0;
+  border-radius: 6px;
+  color: #fff;
+  padding: 5px 10px;
+  position: absolute;
+  right: 0;
+  top: -31px;
+  z-index: 100;
+  display: none;
+}
+.validate-box2 {
+    background: red none repeat scroll 0 0;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    top: -31px;
+    z-index: 100;
+    display: none;
+}
+
+.required.optionalContainer {
+    border: 1px solid #ff0009;
+}
+.clearfix {clear: both;}
+
+
+.optionalContainer {
+  padding-bottom: 7px;
+}
+
+.optionalContainer a {
+  display: block;
+  float: left;
+  background: url(../img/radios.png) 0 8px no-repeat;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 7px;
+  padding-left: 25px;
+  color: #142032;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.optionalContainer a.selected {
+  background-position: 0 -42px;
+}
+
+input[type=checkbox], input[type=file], input[type=radio] {
+  display: inline;
+  margin: 0.5rem;
+}
+
+.kur-firsati{width:100%; margin-top:100px; display:inline-block;}
+.kur-firsati .top{display: inline-block;width: 100%; padding: 20px 0;}
+.kur-firsati .top a{display: inline-block; background: #133d5f;border-bottom: 3px solid #162030; color: #fff; padding: 12px 30px; float: right; max-width:14%;}
+.kur-firsati .top ul{width: 100%;}
+.kur-firsati .top ul li{width: 30%; display: inline-block;}
+.kur-firsati .top ul li select{width: 94%;padding: 8px 4px 8px 15px; height:47px; border:1px solid #d1d1d1; outline: none; box-shadow: inset 0 1px 3px -2px #000; -webkit-appearance:none; background: url(../img/ddl-down1.png) no-repeat right 10px top 17px;}
+
+.kur-firsati table {background:#fff; width:100%;}
+.kur-firsati table th{font-weight:bold; color:#000; padding:8px 10px; text-align:left;max-width:220px;    vertical-align: middle;}
+.kur-firsati table td{ border: 1px solid #fff; padding:25px 10px; text-align:left; vertical-align:middle;}
+.kur-firsati table tr{cursor:pointer;}
+.kur-firsati table tr:hover{background:#efefef;}
+.kur-firsati table .btn-teklif{display:block;color: #fff;background: #007edb;padding: 13px 20px; width: 100px; text-align: center; border-bottom: 3px solid #0062c5;}
+
+.btn-kur-firsati {
+    position: absolute;
+    top: 18px;
+    background: #288fb2;
+    display: inline-block;
+    padding: 15px 15px 11px 15px;
+    color: #fff;
+    font-size: 14px;
+    border-bottom: 4px solid #256d86;
+}
+
+.sasi-sorgu {display:inline-block; width:100%; margin-top:100px; }
+.sasi-sorgu h1{font-size:26px; color:#000; background:#f0f1f2; padding:40px 30px; font-weight:bold;}
+.sasi-sorgu .sorgu-form{width:500px; margin:0 auto; text-align:center;}
+.sasi-sorgu .sorgu-form h2{color:#143d5f; font-size:26px; font-weight:bold;font-family: peugeot,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif; margin-top:45px;}
+.sasi-sorgu .sorgu-form .error{color:#cc3d3a;}
+.sasi-sorgu .sorgu-form .btn-sorgu{color:#fff; background:#1281d8; padding:9px 0; text-align:center; border-bottom:3px solid #0866c2; display:block;}
+.sasi-sorgu .bottom-img{margin: 100px 0 -50px 0; display:block; width:100%;}
+.sasi-sorgu .mobil-bottom{display:none;}
+
+.sasi-sorgu table{width:100%; margin-top:40px;}
+.sasi-sorgu table tr{background:#f9f9f9;}
+.sasi-sorgu table tr:nth-child(2n){}
+.sasi-sorgu table tr th{background:#f0f1f2;border:1px solid #fff; font-weight:bold; min-width:200px; padding: 17px 10px;}
+.sasi-sorgu table tr td{border:1px solid #fff;}
+.sasi-sorgu table tr td:last-child{text-align:center;}
+
+.sasi-sorgu .btn-find{color:#fff; background:#1281d8; padding:9px 0; text-align:center; border-bottom:3px solid #0866c2; display:block; width:500px; margin:0 auto;}
+#filotalepform {margin-top: 35px;}
+
+@media all and (max-width: 959px) and (min-width: 641px) {
+    #contactFormContainer {
+    height: auto;
+  }
+  #contactForm {
+    width: 470px;
+    height: auto;
+    padding: 20px 0;
+  }
+  #contactForm .form-left, #contactForm .preview {
+    margin: 0 0 20px 0;
+  }
+}
+
+@media all and (max-width: 640px) and (min-width: 320px) {
+  #contactFormContainer {
+    height: auto;
+  }
+  #contactForm {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  #contactForm h1 {
+    width: 100%;
+  }
+  #contactForm .form-left {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  #contactForm .form-left .car-informations {
+    height: auto;
+  }
+  #contactForm .form-left .car-informations img {
+    width: 100%;
+  }
+  #contactForm .form-left .car-informations .details {
+    display: none;
+  }
+  #contactForm .form-left .description {
+    font-size: 22px;
+    line-height: 26px;
+    display: none !important;
+  }
+  #contactForm .form-left .campaign-line {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 10px 30px;
+  }
+  #contactForm .divDetail {
+    display: none !important;
+  }
+  #contactForm .form-right {
+    width: 100%;
+  }
+  #contactForm .form-right .multiple .box-input {
+    width: 100%;
+  }
+  #contactForm .termofuse {
+    color: #000 !important;
+    width: 85% !important;
+  }
+  #contactForm .termofuse a {
+    color: #000 !important;
+  }
+  #contactForm .preview {
+    display: none;
+  }
+  #contactForm .button {
+    width: 100%;
+  }
+  #contactForm .preview {
+    display: none;
+  }
+  div {
+    -webkit-overflow-scrolling: touch;
+  }
+    .kur-firsati{
+        margin-top:0;
+    }
+    .kur-firsati .top{
+        padding:20px;
+    }
+    .kur-firsati p{
+        padding: 0 20px;
+        margin-top: -60px;
+        background: #fff;
+        padding-top: 30px;
+    }
+    .kur-firsati .top ul li{
+        width:100%;
+    }
+    .kur-firsati .top ul li select{
+        width: 100%;
+    }
+    .kur-firsati .top ul a {
+        width: 100%;
+        max-width:100%;
+        float:none;
+        text-align:center;
+    }
+    .kur-firsati table{
+        background:#e1e1e1;
+        border:none;
+    }
+    .kur-firsati table tr:first-child {
+        width: 50%;
+        display: none;
+    }
+    .kur-firsati table tr{
+        display:block;
+        margin-bottom:30px;
+        background:#fff;
+    }
+    .kur-firsati table td {
+        width: 90%;
+        position: relative;
+        display: block;
+        text-align: left;
+        padding: 30px 10px 10px 10px;
+        border:none;
+        border-bottom: 1px solid #cdcfd4;
+        margin:0 auto;
+    }
+    .kur-firsati table td:last-child{
+        border:none;
+    }
+    .kur-firsati table tr td:first-child{
+        border:none;
+        padding-bottom:0;
+    }
+    .kur-firsati table tr td:first-child a {
+        font-weight: bold;
+        color: #0062c5;
+        font-size:18px;
+    }
+    .kur-firsati table td:before {
+        position: absolute;
+        left: 10px;
+        top: 7px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .kur-firsati table td:nth-child(1):before{
+        content:"";
+    }
+    .kur-firsati table td:nth-child(2):before{
+        content:"Opsiyon";
+    }
+    .kur-firsati table td:nth-child(3):before{
+        content:"Renk";
+    }
+    .kur-firsati table td:nth-child(4):before{
+        content:"Yakıt Tipi";
+    }
+    .kur-firsati table td:nth-child(5):before{
+        content:"Vites Tipi";
+    }
+    .kur-firsati table td:nth-child(6):before{
+        content:"Tavsiye Edilen Anahtar Teslim Satış Fiyatı";
+    }
+    .kur-firsati table td:nth-child(7):before{
+        content:"Model Yılı";
+    }
+    .kur-firsati table td:nth-child(8):before{
+        content:"Şasi";
+    }
+    .kur-firsati table td:nth-child(9):before{
+        content:"Yetkili Satıcı Adı";
+    }
+    .kur-firsati table td:nth-child(10):before{
+        content:"İl";
+    }
+    .kur-firsati table .btn-teklif{
+        width:100%;
+        margin-bottom:20px;
+    }
+    .kur-firsati-mobil{
+        display:none;
+    }
+    .sasi-sorgu{margin:0;}
+    .sasi-sorgu h1{padding:25px 10px;}
+    .sasi-sorgu .sorgu-form{width:100%; padding:15px; text-align:left;}
+    .sasi-sorgu .sorgu-form h2{text-align:left; font-size:22px; margin-top:20px;}
+    .sasi-sorgu table tr th{width:auto;}
+    .sasi-sorgu .btn-find {width:90%;}
+
+    .sasi-sorgu table{ background:#e1e1e1; border:none;}
+    .sasi-sorgu table tr:first-child { width: 50%; display: none;}
+    .sasi-sorgu table tr {display: block; margin: 20px 0 10px 0; background: #fff; padding: 30px 20px;}
+    .sasi-sorgu table td { width: 90%; position: relative; display: block; text-align: left; padding: 30px 10px 10px 10px; border:none;border-bottom: 1px solid #cdcfd4;  margin:0 auto; }
+    .sasi-sorgu table td:last-child{ border:none; }
+    .sasi-sorgu table tr td:first-child{}
+    .sasi-sorgu table tr td { border: 1px solid #fff; padding: 30px 10px 10px 0;  border-bottom: 1px solid #dbdbdb;}
+    .sasi-sorgu table tr td:last-child{text-align:left;}
+    .sasi-sorgu table td:before { position: absolute; left: 0px; top: 7px; font-size: 14px; font-weight: bold;}
+    .sasi-sorgu table td:nth-child(1):before { content: "VIN";}
+    .sasi-sorgu table td:nth-child(2):before { content: "Kampanya Kodu";}
+    .sasi-sorgu table td:nth-child(3):before { content: "Kampanya Açıklaması";}
+    .sasi-sorgu table td:nth-child(4):before { content: "İlave Açıklama";}
+    .sasi-sorgu .bottom-img{display:none;}
+    .sasi-sorgu .mobil-bottom{display:block;margin: 50px 0 -50px 0; display:block; width:100%;}
+    body > div.off-canvas-wrap > div > div.q-page-container.grid-bg-transparent > div.q-nav-primary.q-mod.q-mod-nav-primary > div.sticky-wrapper.top > nav > div > section.middle.logo-section{background: transparent;}
+}

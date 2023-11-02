@@ -1,0 +1,161 @@
+<section class="services-form-calc">
+    <div class="uk-container uk-container-large">
+        <div class="uk-grid">
+            <div class="uk-width-1-1 uk-margin-bottom bold-weight">
+                <span class="title black-color" style="padding: 2%; font-size: 30px; font-weight: bold; padding-left: 0; color: #000;">
+                    CALCUL DE SERVICE COMPLET</span>
+                <p class="other-size regular-weight">
+                    Vous pouvez calculer notre offre spéciale en choisissant votre modèle de véhicule, le type de
+                    contrat, la durée de
+                    contrat souhaitée et le kilométrage.
+                </p>
+            </div>
+        </div>
+
+        <div class="uk-grid uk-margin-medium-top">
+            <div class="uk-width-1-2@m uk-width-1-1">
+
+                <div class="uk-grid-small service-price-form" uk-grid>
+                    
+                    <mat-form-field class="uk-width-1-1">
+                        <label>Modèle Vehicule</label>
+                        <mat-select [(ngModel)]="mvtarget" (selectionChange)="onSelectModelv($event)" placeholder="--">
+                            <mat-option *ngFor="let modelevs of modelev" [value]="modelevs">{{modelevs}}</mat-option>
+
+                        </mat-select>
+
+                    </mat-form-field>
+                    <mat-form-field class="uk-width-1-1">
+                        <label>Type de contrat</label>
+                        <mat-select [(ngModel)]="typetarget" (selectionChange)="onSelectType($event)" placeholder="--">
+                            <mat-option *ngFor="let types of type" [value]="types">{{types}}</mat-option>
+                        </mat-select>
+
+                    </mat-form-field>
+                    <mat-form-field class="uk-width-1-2@m uk-width-1-1">
+                        <label> Durée de garantie</label>
+                        <mat-select [(ngModel)]="dureetarget" (selectionChange)="onSelectDureeGarantie($event)"
+                            placeholder="--">
+                            <mat-option *ngFor="let durees of dureeGarantie" [value]="durees">{{durees}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <mat-form-field class="uk-width-1-2@m uk-width-1-1">
+                        <label>Kilométrage</label>
+                        <mat-select [(ngModel)]="ktarget" (selectionChange)="onSelectKm($event)" placeholder="--" >
+                            <mat-option *ngFor="let kms of km" [value]="kms">
+                                {{kms | number}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <div class="uk-width-1-1">
+                        <input class="more-btn" type="submit" value="Calculer" (click)="onClick()"  [disabled]= "ktarget==undefined">
+                    </div>
+                </div>
+                <!-- <div style="text-align: center;  margin-top: 70px; font-size: 20px; font-weight: 500; color: #000">
+                  <span >FİYATLARIMIZ GÜNCELLENİYOR</span>
+              </div>-->
+                <!-- ACTIVE DIV (Yukarıdaki formdan seçilecek seçeneğe göre burası değişecek.) -->
+
+                <div class="services-info" *ngIf="hidedisplay">
+                    <div class="uk-flex uk-flex-around">
+                        <div>
+                            <span class="subtitle" id="price-model">PEUGEOT {{mvtarget}}</span><br>
+                            <span class="subtitle" id="price-month">Contrat {{typetarget}}</span><br>
+                            <span class="subtitle" id="price-month">Durée {{dureetarget}}</span><br>
+                            <span class="subtitle" id="price-km">KM {{ktarget | number}}</span><br>
+                        </div>
+                        <div class="">
+                            <span class="subtitle">PHT</span><br>
+                            <span class="price" id="pure-price">{{PUHT | number}} TND</span>
+                        </div>
+                        <div class="">
+                            <span class="subtitle">PTTC</span><br>
+                            <span class="price" id="price-with-kdv">{{PUTTC | number }} TND</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- #ACTIVE DIV -->
+
+
+            </div>
+            <div class="uk-width-1-2@m uk-width-1-1" style="background-color: #F5F5F5; ">
+
+
+                
+                <div class="contact-form satis-sonrasi-cover">
+                    <div class="span"><span class="title">Laissez vos coordonnées et nous vous appellerons.</span></div>
+                    <form   [formGroup]="demandeForm" id="ctl00" class="uk-grid-small arti-garanti-satis-sonrasi" uk-grid="">
+                       
+
+                        <mat-form-field apearance="standard" class="uk-width-1-2@m uk-width-1-1">
+                            <mat-label>Nom</mat-label>
+                            <input matInput formControlName="nom" required type="text">
+                            <mat-error *ngIf="demandeForm.controls.nom.touched && demandeForm.controls.nom.invalid">
+                                <span *ngIf="demandeForm.controls.nom.errors.required" >Email is required</span>
+                                <span *ngIf="demandeForm.controls.nom.errors.pattern" >Email is invalid</span>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field apearance="standard" class="uk-width-1-2@m uk-width-1-1">
+                            <mat-label>Prénom</mat-label>
+                            <input matInput formControlName="prenom" required type="text">
+                            <mat-error *ngIf="demandeForm.controls.prenom.touched && demandeForm.controls.prenom.invalid">
+                                <span *ngIf="demandeForm.controls.prenom.errors.required" >Email is required</span>
+                                <span *ngIf="demandeForm.controls.prenom.errors.pattern" >Email is invalid</span>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field apearance="standard" class="uk-width-1-2@m uk-width-1-1">
+                            <mat-label>Tel</mat-label>
+                            <input matInput formControlName="tel" required type="text">
+                            <mat-error *ngIf="demandeForm.controls.tel.touched && demandeForm.controls.tel.invalid">
+                                <span *ngIf="demandeForm.controls.tel.errors.required" >Email is required</span>
+                                <span *ngIf="demandeForm.controls.tel.errors.pattern" >Email is invalid</span>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field apearance="standard" class="uk-width-1-2@m uk-width-1-1">
+                            <mat-label>Email</mat-label>
+                            <input matInput formControlName="email" required type="text">
+                            <mat-error *ngIf="demandeForm.controls.email.touched && demandeForm.controls.email.invalid">
+                                <span *ngIf="demandeForm.controls.email.errors.required" >Email is required</span>
+                                <span *ngIf="demandeForm.controls.email.errors.pattern" >Email is invalid</span>
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field apearance="standard" class="uk-width-1-2@m uk-width-1-1">
+                            <mat-label>Mat</mat-label>
+                            <input matInput formControlName="matricule" required type="text">
+                            <mat-error *ngIf="demandeForm.controls.matricule.touched && demandeForm.controls.matricule.invalid">
+                                <span *ngIf="demandeForm.controls.matricule.errors.required" >Email is required</span>
+                                <span *ngIf="demandeForm.controls.matricule.errors.pattern" >Email is invalid</span>
+                            </mat-error>
+                        </mat-form-field>
+                       
+                    
+                        <div class="uk-width-1-1">
+                            <button  mat-raised-button color="primary" type="submit" (click)="handleSubmit()" [disabled]=" !(demandeForm.valid && demandeForm.dirty)">
+                                <mat-icon>send</mat-icon> Envoyer
+                            </button>
+                         </div>
+
+
+                    </form>
+                </div>
+
+
+                <div class="us-padding-form">
+                    <p class="regular-weight small-size grey-color">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="space"></div>

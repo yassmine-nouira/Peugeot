@@ -1,0 +1,88 @@
+<mat-card>
+    <h4><b><span>Importe fichier .xlsx</span></b></h4>
+
+    <div class="file">
+        <label><b>Le fichiers doit être en cette forme : Modele - Type de contrat - Durée - Km - PUHT - PUTTC </b></label>
+ 
+
+        <input matInput  type="file" name="file" class="file-input" required (change)="xlsxImport($event)" 
+        accept=".xlsx, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" #input>
+  
+        <button mat-flat-button color="primary" class="float-right" (click)="handleImport()">
+            <mat-icon>upload-circle</mat-icon>Imoprte fichier
+        </button>
+    </div>
+</mat-card>
+
+<mat-card>   
+   <button mat-flat-button color="primary" class="float-right" (click)="handleAddAction()">
+        <mat-icon>add-circle</mat-icon>Ajouter Contrat
+    </button>
+</mat-card>
+<hr>
+<mat-card>
+    <mat-form-field >
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" #input>
+    </mat-form-field>
+</mat-card>
+<hr>
+<div class="responsive_table">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        
+        <ng-container matColumnDef="modelev">
+            <th mat-header-cell *matHeaderCellDef>Modèles Vehicule</th>
+            <td mat-cell *matCellDef="let element">{{element.modelev}}</td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="type">
+            <th mat-header-cell *matHeaderCellDef>Types de contrat</th>
+            <td mat-cell *matCellDef="let element" >{{element.type}}</td>
+        </ng-container>
+        
+
+        <ng-container matColumnDef="dureeGarantie">
+            <th mat-header-cell *matHeaderCellDef>Durée </th>
+            <td mat-cell *matCellDef="let element">{{element.dureeGarantie}}</td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="km">
+            <th mat-header-cell *matHeaderCellDef>Kilometrage </th>
+            <td mat-cell *matCellDef="let element">{{element.km |number}}</td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="puht">
+            <th mat-header-cell *matHeaderCellDef>PHT</th>
+            <td mat-cell *matCellDef="let element">{{element.puht |number}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="puttc">
+            <th mat-header-cell *matHeaderCellDef>PTTC</th>
+            <td mat-cell *matCellDef="let element">{{element.puttc |number}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="edit">
+            <th mat-header-cell *matHeaderCellDef>Action</th>
+            <td mat-cell *matCellDef="let element" class="action-link">
+                <mat-slide-toggle   (change)="onChange($event.checked, element.id)" 
+                matTooltip="Activer ou Désactiver" [checked]="element.status">
+          
+              </mat-slide-toggle>
+                <button mat-icon-button color="primary" matTooltip="Modifier" (click)="handleEditAction(element)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button color="primary" matTooltip="Supprimer" (click)="handleDeleteAction(element)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky:true;"></tr>
+        <tr mat-row *matRowDef="let row; columns:displayedColumns;"></tr>
+
+    </table>
+</div>

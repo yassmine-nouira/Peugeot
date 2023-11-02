@@ -1,0 +1,2143 @@
+﻿@import url('font/fontnew.css');
+@import url('pejo-new.css');
+/*html, body, div, table, label, ul, ol, blockquote, input, select, textarea, label.legal-notice, p, select optgroup, select option, #menu, .button, button {font:300 .95rem/1.4 'Peugeot New',Helvetica, Arial,serif}*/
+body, html {color:#787B80;}
+h1, h2, h3, h4, h5, h6 {font-family:'Peugeot New';color: #000000;}
+a {color: #787B80;text-decoration: none;}
+a:hover {color: #000000;text-decoration: none;}
+
+.btn-cta, a.btn-cta {min-height: unset;max-height: unset;min-width: unset;max-width: unset; padding: 15px 30px;display: inline-block;vertical-align: middle;font-size: .75rem;line-height: 1;background-color: #00A3E0;border:1px solid #00A3E0;margin:0;text-align: center;}
+.btn-cta>span {line-height: 1;font-size: .75rem;}
+.btn-cta.wire, a.btn-cta.wire,.btn-cta.wire:hover, a.btn-cta.wire:hover {background-color: #ffffff;border:1px solid #00A3E0;color: #00A3E0;}
+.btn-cta.gray, a.btn-cta.gray, .btn-cta.grayhover, a.btn-cta.gray:hover  {border-color:#979797;background-color:#979797;}
+.btn-cta.wire.gray, a.btn-cta.wire.gray,.btn-cta.wire.gray:hover, a.btn-cta.wire.gray:hover {border-color:#979797;color:#787B80;background-color:#ffffff;}
+.main-section #contactFormContainer {
+    display: flex;
+    justify-content: center;
+}
+.main-section .main-form {
+    max-width: 93.75rem;
+    padding: 0 1.875rem;
+}
+input:not([type]), input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], textarea, select {
+    padding: .9rem;
+    height: auto;
+    margin: 0;
+    border:1px solid #787B80;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+input:not([type]):focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, textarea:focus, select:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+input[type=checkbox], input[type=file], input[type=radio] {margin: 5px 5px 5px 0}
+
+.satissonrasi input:not([type]), .satissonrasi  input[type=color], .satissonrasi  input[type=date], .satissonrasi  input[type=datetime-local], .satissonrasi  input[type=datetime], .satissonrasi  input[type=email], .satissonrasi  input[type=month], .satissonrasi  input[type=number], .satissonrasi  input[type=password], .satissonrasi  input[type=search], .satissonrasi  input[type=tel], .satissonrasi  input[type=text], .satissonrasi  input[type=time], .satissonrasi  input[type=url], .satissonrasi  input[type=week], .satissonrasi  textarea, .satissonrasi  select {
+    border:0;
+    background-color: #ffffff;
+}
+.satissonrasi  input[type="checkbox"], .satissonrasi  input[type="radio"] {background-color: transparent !important;}
+
+.wrapper-menu:before {background:#000000;}
+
+form .box-input, form .multiple {margin-bottom:1rem}
+form .multiple > .box-input {margin-bottom: 0;}
+
+.sitecontainer {max-width: none;}
+.sitecontainer > .body, .sitecontainer > .toplink, .sitecontainer > aside > nav,  .sitecontainer > .privacy-box-2021, .footer > .slice-pt2 {max-width: 1306px;margin-left: auto;margin-right: auto;}
+
+.footer {background-color: #000000;padding: 5vw 0 2vw 0;}
+.footer, .footer div, .footer table, .footer .panel-padding p, .footer a, .footer .slice-pt2 p.title {color: #ffffff;text-decoration: none;}
+.body + .footer {margin-top: 40px;}
+.footer .row {max-width: unset;}
+.mobileSubTitle {
+    display: none
+}
+.flex-form, .flex-form.main-form {
+    display: flex;
+    flex-direction: row;
+}
+.flex-form > * {
+    flex:1;
+}
+img.flex-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+button,button:active, button:hover {background-color:#00A3E0;border:1px solid #00A3E0;font-weight: bold;display: inline-block;padding: 15px 30px;font-size: .75rem;line-height: 1;white-space: nowrap; vertical-align: middle;}
+.btn-cta.dark-blue, .satissonrasi .satis_buttons > a  {background-color:#00A3E0;border:1px solid #00A3E0;font-weight: bold;}
+.btn-cta.dark-blue:hover, .satissonrasi .satis_buttons > a:hover {background-color:#00A3E0;border:1px solid #00A3E0}
+.btn-cta.dark-blue:after {display: none;}
+.true-no-touch .btn-cta.dark-blue:hover {background-color:#00A3E0;border:1px solid #00A3E0}
+
+.principal[role=navigation] .logo a .logo-no-img {display: inline-block;width: 91px;height: 98px;background: transparent url(https://talep.peugeot.com.tr/assets/img/peugeot-new-logo.svg) center center / auto 100% no-repeat;font-size:0}
+
+/* sumo select */
+
+.SumoSelect {border: 1px solid #787B80;background-color: #ffffff;position: relative;z-index: 1;}
+.SumoSelect:focus {outline: none;} 
+.SumoSelect.error {border-color:#CB0929}
+.SumoSelect select {display: none;}
+.SumoSelect .optWrapper {position: absolute;z-index: 1;top:120%;right: 0;left:0;margin:0 !important;background-color: #ffffff;border:1px solid #CDCDCD;max-height: 180px;overflow:auto;overflow-x: hidden;padding: 20px;opacity: 0;visibility: hidden;}
+.SumoSelect.open {}
+.SumoSelect.open .optWrapper {opacity: 1;visibility: visible;top:100%}
+.SumoSelect .optWrapper ul, .SumoSelect .optWrapper ul > li {margin: 0;padding: 0;list-style: none;text-align: left;}
+.SumoSelect .optWrapper ul > li {padding:0;cursor: pointer;}
+.SumoSelect .optWrapper ul > li.selected {color:#00A3E0}
+.SumoSelect .optWrapper ul > li.hidden {display: none;}
+.SumoSelect p.SelectBox {padding: 15px 25px 13px 15px;text-align: left;position: relative;z-index: 1;cursor: pointer;}
+.SumoSelect p.SelectBox:after {content: "";display: block;width: 16px; height: 10px;background: transparent url(https://talep.peugeot.com.tr/assets/img/arrow-blue.svg) center center no-repeat;background-size: auto 100%;position: absolute;z-index: 2;right: 12px;top: calc(50% - 5px);transform: rotate(90deg);}
+.SumoSelect.open p.SelectBox:after {transform: rotate(-90deg);}
+.SumoSelect input.search-txt {opacity: 0;visibility: hidden;border:0 !important;position: absolute;z-index: 1;left:0;top: 0;bottom:0;right: 0;}
+.SumoSelect.open input.search-txt {opacity: 1;visibility: visible;}
+.SumoSelect p.no-match {color:#dd1133;margin:0 !important;display: none;}
+.SumoSelect.open>.search>span, .SumoSelect.open>.search>label {visibility: hidden;}
+.SumoSelect .SelectBox > span {white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    padding-right: 0;
+    display: block;}
+
+.main-form{
+    display: inline-block;
+    width: 100%;
+    padding-top: 150px;
+    margin-bottom: 60px;
+}
+
+.main-form .form-left{
+    width:50%;
+    float:left;
+}
+.main-form .form-left .car-informations{
+    text-align:center;
+}
+.main-form .right .car-informations img{
+    margin-bottom:20px;
+}
+.main-form .form-left .car-informations h1{
+    color:#000;
+    text-align:left;
+}
+.main-form .form-left .preview img{
+    width:100%;
+}
+.main-form .form-left .watch{
+    font-size: 20px;
+    color: #0866c2;
+    line-height: 25px;
+    margin-top:20px;
+    position:relative;
+    padding-left:45px;
+    display:inline-block;
+    font-style: italic;
+}
+.main-form .form-left .watch:before{
+    content:"";
+    position:absolute;
+    background:url(../img/new-form/btn-movie.png);
+    left:0;
+    top:-7px;
+    width:40px;
+    height:40px;
+}
+
+
+.main-form .right{
+    width:50%;
+    padding:0 0 0 20px;
+    position:relative;
+}
+
+.main-form .right #divCampaign {
+    margin-top: 36px;
+    font-size:.85rem;
+}
+.main-form .right #divCampaign ul > li::marker {
+    color:#00A3E0;
+}
+
+.main-form .right select{
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url(https://talep.peugeot.com.tr/assets/img/arrow-blue.svg);
+}
+
+.main-form .bottom{
+    clear: both;
+    padding-top: 50px;
+}
+.main-form .bottom:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.optionalContainer {
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.main-form .bottom .left{
+    width:50%;
+    padding:0;
+}
+.main-form .bottom .left.column-one {
+    width: 100%;
+    float: none;
+}
+.main-form .bottom .left h1{
+    font-size:22px;
+    color:#143d5f;
+    font-weight:bold;
+    text-align:center;
+    padding:20px 0;
+}
+
+.main-form .bottom .left label{
+    display:block;
+    font-size:.75rem;
+    position:relative;
+    margin-bottom: 15px;
+
+}
+    .main-form .bottom .left .vale-cbox label {
+        margin-bottom: 0;
+        line-height: 25px;
+        color: #4d4d4d;
+    }
+.main-form .bottom .left label > i {color:#FF0000;font-style: normal;}
+.main-form .bottom .left .optionalContainer label{
+    font-size:1rem;
+    color: #000000;
+    font-weight: 400;
+}
+.main-form .bottom .left .SelectBox label, .main-form .bottom .left .SumoSelect .opt > label {
+    display:inherit;
+    height:auto;
+    width:auto;
+    font-size:inherit;
+    position:inherit;
+}
+.main-form .bottom .left .SumoSelect .opt > label {padding: 10px 20px;margin:0 -20px}
+.main-form .bottom .left .SumoSelect .opt:hover > label {background-color: #00A3E0;color: #ffffff;}
+.main-form .bottom .left .SumoSelect .opt + .opt {border-top:1px solid #dedede}
+
+.main-form .bottom .left label > p:not(.SelectBox):not(.no-match) {
+    cursor: pointer;
+    display: inline-block;
+    margin:0 5px;
+    vertical-align: middle;
+    background:transparent url(https://talep.peugeot.com.tr/assets/img/ico-n-info.svg) center center / auto no-repeat;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    z-index: 10;
+}
+/*.main-form .bottom .left p:before{
+    content:"";
+    position:absolute;
+    background:url(../img/new-form/info-icon.png);
+    background-repeat:no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    left: 3px;
+    top: 7px;
+}*/
+.main-form .bottom .left label > p:not(.SelectBox) span{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top:0;
+    background: #fff;
+    border:1px solid #787B80;
+    font-size:.75rem;
+    z-index: 9;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    width: 220px;
+}
+
+.main-form .bottom .left label > p:not(.SelectBox):hover span, .main-form .bottom .left label > p:not(.SelectBox):focus span{
+    opacity: 1;
+    visibility: visible;
+    right: 105%;
+}
+
+.main-form .bottom .left .multiple .box-input{
+    width:48%;
+    position: relative;
+    z-index: 1;
+}
+.main-form .bottom .left .multiple .box-input:first-child{
+    float:left;
+}
+.main-form .bottom .left .multiple .box-input:first-child{
+    float:right;
+}
+.main-form .bottom .left .multiple .box-input:first-child{
+    float:right;
+}
+.main-form .bottom .left .multiple .box-input.one{
+    float:left;
+}
+.main-form .bottom .left .multiple .box-input.two{
+    float:right;
+}
+.main-form .bottom .left .multiple .box-input select, select {
+    appearance: none;
+    -webkit-appearance: none;
+    background:#ffffff url(https://talep.peugeot.com.tr/assets/img/arrow-black.svg) no-repeat;
+    background-position:right 15px top calc(50% - 3px);
+}
+.main-form .bottom .left .multiple .box-input.input-name{
+    float:left;
+}
+.main-form .bottom .left .multiple .box-input.input-surname{
+    float:right;
+}
+
+.main-form .bottom .left .yetkili{
+    display:none;
+}
+.main-form .bottom .left .yetkili img{
+    width:100%;
+    margin: 0 0 15px 0;
+}
+
+.satissonrasi .last-notice {padding: 20px 40px;font-size: .75rem;line-height: 1.5;}
+.satissonrasi .satis_buttons {margin-left: -5px;margin-right: -5px;}
+.satissonrasi .satis_buttons > a {
+    color: #ffffff;
+    font-size:.75rem;
+    margin: 2.5px 5px;
+}
+.main-form .bottom .right label, label.legal-notice{
+    font-style:normal;
+}
+
+label.legal-notice {font-size:.65rem}
+
+.main-form .bottom .right{
+    position:relative;
+    margin:0;
+    padding-left: 95px;
+}
+.main-form .bottom .right.column-two {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+}
+.main-form .bottom .right fieldset{
+    border:none;
+    padding:0;
+}
+.main-form .bottom .right .validate-box {
+    left: 70px;
+    top: 30px;
+    width:250px;
+}
+.main-form .bottom .right .validate-box2{
+    left: 70px;
+    top: 260px;
+    width:250px;
+}
+.required.optionalContainer{
+    padding:0;
+    margin-bottom:10px;
+}
+.main-form .right .detail p:first-child {
+    font-size: 26px;
+    color: #000000;
+    font-weight:bold;
+}
+.main-form .right .detail p span{
+    color:#000;
+    font-weight:normal;
+    font-size: 20px;
+}
+
+.main-form .right .detail p.kampanya{
+    position: absolute;
+    bottom: -60px;
+}
+
+.main-form .right .detail ul li{
+    list-style: disc;
+    list-style-position: inside;
+    margin-bottom:5px;
+}
+.main-form .right .yenirifter-detail p{
+    font-size:22px;
+    color:#0866c2;
+    line-height:25px;
+}
+
+.main-form .right .yenirifter-detail p.kampanya{
+    position: absolute;
+    bottom: -60px;
+}
+
+.main-form .right .yenirifter-detail ul li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 16px;
+    color: #142032;
+    margin-bottom: 5px;
+}
+
+.main-form .right .buttons{
+    margin-top:20px;
+    display:inline-block;
+    width:100%;
+    font-size:.65rem;
+    font-weight: bold;
+    overflow: hidden;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.main-form .right .buttons a {
+    color:#fff;
+    background:#00A3E0;
+    padding: 16px 32px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.main-form .right .firsat .buttons a{
+   position:relative;
+   padding-right:50px;
+}
+.main-form .right .firsat .buttons a:after {
+    position: absolute;
+    content:"";
+    background:url(../img/new-form/ddl-down.png) no-repeat;
+    background-size:100%;
+    width:25px;
+    height:25px;
+    right:12px;
+    top:17px;
+}
+.slice-pt2 p.title, .slice-pt2 .small-contact:first-child .title {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: 'Peugeot New';
+    border:0;
+    height: auto;
+    line-height: 1.4;
+}
+.slice-pt2 ul.links {
+    padding: 0;
+}
+.slice-pt2 .phone-number{
+    color:#ADAEB2;
+}
+.slice-pt2 .small-contact {
+    text-align: inherit;
+}
+.slice-pt2 .all-models {
+    background-color: #000000;
+    border:1px solid #ffffff;
+}
+ .slice-pt2 .all-sites {
+    background-color: #ffffff;
+    border:1px solid #ffffff;
+}
+.footer .slice-pt2 .all-sites a {
+    color: #000000;
+}
+.slice-pt2 .legal-links li a {
+    text-transform: none;
+}
+.slice-pt2 .site-map-expand .site-map-full-btn {
+    background: none;
+    width: auto;
+    padding: 15px 30px;
+    border:1px solid #ffffff;
+    margin:0 0 10px 0;
+}
+.logo-footer {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    background: transparent url(https://talep.peugeot.com.tr/assets/img/peugeot-new-logo.svg) center center / auto 100% no-repeat;
+    width: 86px;
+    height: 95px;
+}
+.slice-pt2 .site-map-expand-btn {
+    margin: 20px auto;
+    color: #000000;
+}
+.slice-pt2 .site-map-expand {
+    background-color: transparent;
+    margin:0 auto;
+    padding: 20px;
+}
+#contactForm .thanks{
+    height:auto;
+    border:none;
+}
+#contactForm .thanks h2{
+    padding: 32px 0 0;
+}
+#contactForm .thanks h3{
+    padding:0;
+}
+#contactForm .thanks .discover{
+    margin: 0 auto 20px auto;
+}
+#contactForm .form-left .car-informations.finalv2{
+    padding-top: 90px;
+}
+.ontalep{
+    position:relative;
+}
+.ontalep-main .right .detail p{
+    font-size:20px;
+    color:#000;
+}
+.ontalep-main .right .detail h1{
+    color:#000;
+}
+.ontalep-main .right .detail h3 {
+    margin:0;
+    padding:0;
+    text-align:left;
+    color: #000;
+    font-size:24px;
+}
+.ontalep-main .right .detail h2 {
+    padding-top: 40px;
+    font-size: 20px;
+    color: #0866c2;
+    line-height: 25px;
+    text-align: left;
+    font-family: HelveticaNeue-Light,Helvetica Neue Light,Helvetica Neue,Helvetica,Roboto,Arial;
+}
+.ontalep-form{
+    margin-top:10px;
+    display:inline-block;
+    width:100%;
+    
+}
+.ontalep-form .multiple .box-input{
+    width:48%;
+    float:left;
+}
+.ontalep-form .multiple .box-input:last-child{
+    width:48%;
+}
+.ontalep-main .bottom{
+    margin-top:-40px;
+}
+
+.kvkk{
+    text-align:left;
+}
+.kvkk h1{font-weight:bold; font-size:22px; color:#3c3947; margin:25px 0;}
+.kvkk h2{text-align:left; font-weight:bold; font-size:22px; margin-bottom:10px;}
+.kvkk p{font-size:20px; text-align:left;font-family: peugeot,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;}
+.kvkk ul li{font-size:20px; text-align:left;font-family: peugeot,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;}
+
+form.bilgi-talebi-form, form.ticari-bilgi-talebi {
+    margin: 20px auto;
+}
+
+form.satis-sonrasi-form, form.bilgi-talebi-form, #kivaWebToSupport_webform,form.ticari-bilgi-talebi {
+    position: relative;
+    z-index: 1;
+}
+form.satis-sonrasi-form:before, form.bilgi-talebi-form:before, form.ticari-bilgi-talebi:before, #kivaWebToSupport_webform:before {
+    content: "Lütfen bekleyiniz...";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;top:0;right: 0;bottom: 0;
+    font-size:3rem;
+    color: #000000;
+    text-align: center;
+    background-color: rgba(255,255,255,.85);
+    opacity: 0;
+    visibility: hidden;
+}
+form.satis-sonrasi-form.process:before, form.bilgi-talebi-form.process:before, #kivaWebToSupport_webform.process:before,form.ticari-bilgi-talebi.process:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+label#surveyAnswer-error, label#radio-error {position: absolute;z-index: 1;right: 0;top: 0;width: max-content;margin: 0;}
+label#surveyAnswer-error:before, label#radio-error:before {left: -9px;bottom: auto;top: 8px;transform: rotate(-90deg);}
+
+input[type="submit"],input[type="reset"],input[type="button"] {
+    cursor: pointer;
+    border:1px solid #00A3E0;
+    background-color: #00A3E0;
+    color: #fff;
+    padding: 15px 30px;
+    text-align: center;
+    font-size:.75rem;
+    font-weight: bold;
+}
+input[type="reset"] {
+    background-color: transparent;
+    border-color: #787B80;
+    color: #787B80;
+}
+input[type="button"].input-file {
+    padding: 15px 30px;
+    display: block;
+    width: 100%;
+    background-color: #000000;
+    border:none;
+    color:#ffffff;
+
+}
+input[type="button"].input-file:hover {
+    background-color: #2b2b2b;
+}
+label.error, .main-form .bottom .left label.error {
+    position: relative;
+    display: block;
+    height: auto;
+    font-size:.75rem !important;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    background-color: rgb(206, 0, 0);
+    color: #ffffff;
+    font-size: 14px;
+    padding: 7.5px 10px;
+    margin:10px 0;
+    border-radius: 3px;
+  }
+    label.error:before, .main-form .bottom .left label.error:before, input[type=checkbox] + label:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        left: 20px;
+        bottom: 100%;
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+.aggreement-checkbox, .vale-cbox {
+    position: relative;
+    z-index: 1;
+    padding-left: 32px;
+}
+.vale-cbox {
+    padding-left: 29px;
+    display: none;
+    margin-top: 40px;
+}
+.aggreement-checkbox input[type="checkbox"], .vale-cbox input[type="checkbox"] {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top:3px;
+    -webkit-appearance: none!important;
+    appearance: none!important;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    margin: 0;
+    padding: 0;
+}
+.aggreement-checkbox input[type="checkbox"].error {
+    border: 1px solid rgb(206, 0, 0);
+}
+.aggreement-checkbox input[type="checkbox"]:before, .vale-cbox input[type="checkbox"]:before {
+    content: "";
+    width: 6px;
+    height: 9px;
+    border:2px solid #000000;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    display: block;
+    left: 6px;
+    top:3px;
+    position: absolute;
+}
+.aggreement-checkbox input[type="checkbox"]:checked:before, .vale-cbox input[type="checkbox"]:checked:before {
+    opacity: 1;
+}
+
+input.error, select.error, textarea.error {
+    border-color: rgb(206, 0, 0);
+}
+
+.form-sent-final {
+    clear: both;
+    padding: 30px 10px;
+}
+
+.privacy-box-2021 {
+    display: none;
+    background-color: #3b4047;
+    color: #ffffff;
+    position: fixed;
+    z-index: 10010;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.privacy-box-2021 p {margin:0 !important; padding:0;}
+.privacy-box-2021 p + p {margin-top: 16px;}
+.privacy-box-2021 > .pv-box {
+    max-width: 1306px;
+    margin:0 auto;
+    padding: 10px 40px 10px 10px;
+    position: relative;z-index: 1;
+}
+.privacy-box-2021 a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+.privacy-box-2021 a:hover {
+    text-decoration: none;
+}
+.privacy-box-2021 a.privacy-box-2021-close {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    text-decoration: none;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px
+}
+
+/* kiva form */
+
+.selected-files.dn {
+    display: none;
+}
+
+.main-form.contact-form-box {
+    padding-top:145px
+}
+
+#kivaWebToSupport_webform {
+    display: flex;
+    flex-direction: row;
+    background-color: #EFEFEF;
+    box-sizing: border-box;
+}
+#kivaWebToSupport_webform label {
+    display:block;
+    margin-bottom:10px;
+    font-size:.75rem;
+}
+#kivaWebToSupport_webform label > i {
+    font-style:normal;
+    color:#ff0000
+}
+#kivaWebToSupport_webform strong {
+    font-weight: 700;
+}
+#kivaWebToSupport_webform p {
+    margin:0;
+    padding: 0;
+}
+#kivaWebToSupport_webform .tocenter {
+    text-align: center;
+}
+#kivaWebToSupport_webform p.aggreement-checkbox {
+    padding-left:32px
+}
+#kivaWebToSupport_webform h2 {
+    text-align: left;
+}
+#kivaWebToSupport_webform p + p, 
+#kivaWebToSupport_webform p + div, 
+#kivaWebToSupport_webform div + p, 
+#kivaWebToSupport_webform p + div + div,
+#kivaWebToSupport_webform p + form,
+#kivaWebToSupport_webform form + p
+ {
+    margin-top:24px;
+}
+#kivaWebToSupport_webform .soclose + * {
+    margin-top:5px;
+}
+
+#kivaWebToSupport_webform > div {
+    flex:1;
+    box-sizing: border-box;
+}
+#kivaWebToSupport_webform > div.kiva-left {
+    order:5;
+}
+#kivaWebToSupport_webform > div.kiva-right {
+    order:10;
+    padding:40px;
+    max-width: 50%;
+}
+#kivaWebToSupport_webform > div.kiva-left p {
+    height: 100%;
+    margin:0;
+}
+#kivaWebToSupport_webform > div.kiva-left picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#kivaWebToSupport_webform > div.kiva-left img {
+   display: block;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+#kivaWebToSupport_webform p.split, #kivaWebToSupport_webform .split {
+    display: flex;
+    flex-direction: row;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+#kivaWebToSupport_webform p.split.cent {
+    align-items: center;
+}
+#kivaWebToSupport_webform .split > em, #kivaWebToSupport_webform .split > div, #kivaWebToSupport_webform .split > p {
+    flex:1;
+    margin-left: 7.5px;
+    margin-right: 7.5px; 
+    position: relative;
+    z-index: 1;
+}
+
+#kivaWebToSupport_webform textarea {
+    resize: vertical;
+}
+#kivaWebToSupport_webform p.taged, #kivaWebToSupport_webform div.taged {
+    position: relative;
+    z-index: 1;
+}
+
+#kivaWebToSupport_webform input:not([type]), #kivaWebToSupport_webform input[type=color], #kivaWebToSupport_webform input[type=date], #kivaWebToSupport_webform input[type=datetime-local], #kivaWebToSupport_webform input[type=datetime], #kivaWebToSupport_webform input[type=email], #kivaWebToSupport_webform input[type=month], #kivaWebToSupport_webform input[type=number], #kivaWebToSupport_webform input[type=password], #kivaWebToSupport_webform input[type=search], #kivaWebToSupport_webform input[type=tel], #kivaWebToSupport_webform input[type=text], #kivaWebToSupport_webform input[type=time], #kivaWebToSupport_webform input[type=url], #kivaWebToSupport_webform input[type=week], #kivaWebToSupport_webform textarea, #kivaWebToSupport_webform select {
+    margin:0;
+    height:auto;
+    border:0;
+}
+#kivaWebToSupport_webform select {
+    padding: 0.8rem;
+}
+
+#kivaWebToSupport_webform input[type=checkbox], #kivaWebToSupport_webform input[type=file], #kivaWebToSupport_webform input[type=radio], select {
+    margin:0;
+}
+#kivaWebToSupport_webform p.aggreement-checkbox, #kivaWebToSupport_webform p.aggreement-checkbox label {
+    font-size:.75rem
+}
+.selected-files {
+    padding-right: 34px;
+    font-size:.75rem;
+}
+.selected-files a.file-remove {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 24px;
+    text-align: center;
+    background-color: #c20808;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.selected-files[style*="block"] + .files-browse {
+    display: none;
+}
+
+#kivaWebToSupport_webform label.tag-anime {position: absolute; z-index: 2;left: 14px;top:12px;color:#666666;visibility: hidden;opacity: 0;font-style: normal;} 
+#kivaWebToSupport_webform label.tag-anime.focused, #kivaWebToSupport_webform label.tag-anime.focused label.tag-anime.stay, #kivaWebToSupport_webform label.tag-anime.focused label.tag-anime.focused.stay {top:-10px;opacity: 1;left:9px;visibility: visible;opacity: 1;font-size:11px;background-color: #EFEFEF;padding: 2px 5px 0 5px;border-radius: 3px 3px 0 0;}
+
+.vale-error-box {
+    position: absolute;
+    z-index: 101;
+    background-color:rgba(239, 239, 239,.75);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.vale-error-box.active {
+    visibility: visible;
+    opacity: 1;
+}
+.vale-error-box .cover {
+    width: 320px;
+    padding:20px;
+    background-color: #000000;
+    color: #ffffff;
+    height: max-content;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    border-radius: 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 46px 6px rgb(0 0 0 / .2);
+    opacity: 0;
+    transform: scale(0);
+    visibility: hidden;
+    text-align: center;
+}
+.vale-error-box, .vale-error-box p, .vale-error-box .cover, .vale-error-box .cover a {
+    color: #ffffff;
+}
+
+.vale-error-box .cover a.buton {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 20px;
+    border:1px solid #ffffff;
+    color: #ffffff;
+}
+.vale-error-box.active .cover {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+.vale-error-box .cover p:last-child {margin-bottom: 0;padding-bottom: 0;}
+
+.principal[role=navigation] {position: relative;}
+.principal[role=navigation] header {width:82px;height:90px;padding: 0;background-color: transparent;margin: 30px 0 10px 30px;}
+.principal[role=navigation] .logo {width:82px;height:90px;padding: 0;background-color: transparent;min-height: unset;}
+.principal[role=navigation] .logo > a {height: 100%;width: 100%;padding: 0;}
+.slice-pt21 {position: fixed;right: 0;top: 0;left:0;z-index: 100;height: 145px !important;background-color: #000000;}
+
+.slice-pt2 .content {padding: 0;background: none;}
+
+#menu  {border-bottom: 1px solid #ffffff;margin-bottom: 1px;}
+#menu li.menu-item>div.content-link>a>span {font-size: .75rem;}
+#menu > li {font-size: .75rem;}
+#menu .menu-item>.content-link a span {height: auto;}
+.wrapper-menu {height: auto;width: calc(100% - 150px);margin-top: 50px;}
+
+.block-right-header, .block-right-header2 {position: absolute;right: 0;left: 0;text-align: right;margin:auto;max-width: 1306px;}
+
+header .menu-icon {font-size:0;position: fixed;}
+#sm_menu_ham {position: fixed;}
+
+.slice-pt2 ul.social {margin-left: -10px;margin-right: -10px;text-align: inherit;}
+.slice-pt2 ul.social li {width: auto;border:0;padding: 10px;}
+.slice-pt2 ul.social li a {background-color: transparent;height: auto;line-height: 1;}
+
+.copyright-text {font-size: .75rem;}
+
+.block-right-header2 .wrapper-txt *, .block-right-header .wrapper-txt * {
+    font-size:.65rem;
+}
+.block-right-header2.header-white .elem-header-right.config-tool .icon, .block-right-header2.show-for-small-only .elem-header-right.config-tool .icon, .block-right-header.header-white .elem-header-right.config-tool .icon, .block-right-header.show-for-small-only .elem-header-right.config-tool .icon, .block-right-header .elem-header-right.tool-dealer .icon,.block-right-header.header-white .elem-header-right.my-peugeot .icon, .block-right-header.header-white .elem-header-right.slice-pt3 .icon {
+    background-image: none;
+    width: 25px;
+    height: 25px;
+    background-size: auto 100%;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.block-right-header.header-white .elem-header-right.config-tool .icon {
+    background-image:url(https://talep.peugeot.com.tr/assets/img/ico-n-konfigurator.svg);
+    width: 24px;
+    height: 18px;
+    margin-top: 3.5px;
+}
+.block-right-header .elem-header-right.tool-dealer .icon {
+    background-image:url(https://talep.peugeot.com.tr/assets/img/ico-n-bayiarama.svg); 
+}
+.block-right-header.header-white .elem-header-right.my-peugeot .icon {
+    background-image:url(https://talep.peugeot.com.tr/assets/img/ico-n-mypeugeot.svg);
+}
+.block-right-header.header-white .elem-header-right.slice-pt3 .icon {
+    background-image:url(https://talep.peugeot.com.tr/assets/img/ico-n-yardim.svg);
+}
+.block-right-header2 .elem-header-right .header-txt-inline, .block-right-header .elem-header-right .header-txt-inline {
+    font-size:.65rem;
+    font-family: 'Peugeot New';
+    line-height: 25px;
+    height: auto;
+}
+.block-right-header2 .elem-header-right .header-txt-inline .light, .block-right-header .elem-header-right .header-txt-inline .light {
+    font-size:.65rem;
+    font-family: 'Peugeot New';
+    line-height: 25px;
+    height: auto;
+}
+.block-right-header2 .elem-header-right .header-txt-inline .light:after, .block-right-header .elem-header-right .header-txt-inline .light:after {
+    display: none;
+}
+.block-right-header2 .elem-header-right:after, .block-right-header .elem-header-right:after {
+    display: none;
+}
+
+.block-right-header2.header-white, .block-right-header2.show-for-small-only, .block-right-header.header-white, .block-right-header.show-for-small-only {
+    background-color: transparent;
+}
+
+a.btn_firsat, a.btn_firsat:hover {
+    background-color: #da472f;
+    border-color: #da472f;
+    color: #ffffff;
+    padding: 15px 30px;
+}
+a.btn_firsat:after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+    margin: -3px 0 3px 15px;
+    background: url(https://talep.peugeot.com.tr/assets/img/arrow-white.svg) center center / auto 100% no-repeat;
+    font-size:.75rem; 
+}
+
+.promo.flex-left picture, .promo.flex-left picture img {
+    display: block;
+    margin:0;
+    padding: 0;
+    height: 100%;
+    object-fit: contain;
+    object-position: center top;
+    background-color: #000000;
+}
+
+.toplink .link.desktop, .toplink .link.mobile {
+    background-color: #000000;
+    border:0 !important;
+}
+.toplink .link.desktop > span, .toplink .link.desktop .arrow, .toplink .link.mobile .arrow, .toplink .link.mobile > span  {
+    display: none !important; 
+}
+.toplink .link.desktop:before, .toplink .link.mobile:before {
+    width: 10px;
+    height: 10px;
+    content: "";
+    border:1px solid #ffffff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(-135deg);
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 5px);
+    top: calc(50% - 2px);
+}
+
+.overlay-menu {
+    transition: none !important;
+}
+
+.sasi-sorgu-link {
+    text-decoration: underline;
+    text-decoration-color: #00A3E0;
+    color: #00A3E0;
+}
+
+.sasi-sorgu-paragraph{
+    margin-bottom: 30px;
+}
+
+.sasi-sorgu-form{
+    padding-top: 50px!important;
+}
+/*  transitions  */
+.trans300, input[type="checkbox"]:before, form.satis-sonrasi-form:before, #kivaWebToSupport_webform label.tag-anime, .vale-error-box, .vale-error-box .cover, img.imgModel, .main-form .bottom .left label > p > span, .logo a, .logo a .logo-no-img {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.trans700 { -webkit-transition: all 0.7s ease;-moz-transition: all 0.7s ease;-ms-transition: all 0.7s ease;-o-transition: all 0.7s ease;transition: all 0.7s ease; }
+
+
+@media only print, screen and (min-width: 40.0625em) {
+    .principal[role=navigation] {height: 145px;background-color: #000000;}
+    .principal[role=navigation] .logo {margin:0;}
+    .principal[role=navigation] .logo a .logo-no-img {display: inline-block;width:100%;height:100%;background: transparent url(https://talep.peugeot.com.tr/assets/img/peugeot-new-logo.svg) center center / auto no-repeat;font-size:0}
+    #menu > li {display: inline-block; vertical-align: middle;}
+    .principal[role=navigation]:after {content: "";height: 1px;background-color: #ffffff;right: 0;top: calc(50% + .75rem);left: 150px;display: block;position: absolute;z-index: 10;}
+    #menu .menu-item a:not(.menu-item-title,.menu-item) {max-width: unset !important;}
+}
+
+@media only screen and (min-width:1024px) {
+    body header, body header.active {background-image: none;}
+}
+@media only screen and (min-width:481px) {
+    form[action*="satissonrasi"], form[action*="satis"] {display: block;}
+}
+@media only all and (max-width:1360px) {
+    .block-right-header, .block-right-header2 {left: 30px;right: 30px;}
+    .sitecontainer > .body, .sitecontainer > .toplink, .footer > .slice-pt2 {margin-left: 30px;margin-right: 30px;}
+}
+@media only all and (max-width:1024px) {
+    .block-right-header, .block-right-header2 {left: 20px;right: 20px;}
+    .sitecontainer > .body, .sitecontainer > .toplink, .footer > .slice-pt2, #carSection .carContainer .container {margin-left: 20px;margin-right: 20px;}
+}
+@media only all and (max-width:1024px) and (orientation:landscape) {
+    #kivaWebToSupport_webform > div.kiva-right {
+        max-width: 60%;
+    }
+}
+@media only all and (max-width:968px) {
+    #kivaWebToSupport_webform {
+        display: block;
+    }
+    #kivaWebToSupport_webform .split, #kivaWebToSupport_webform p.split {
+        display: block;
+    }
+    #kivaWebToSupport_webform .split > * {
+        display: block;
+    }
+    #kivaWebToSupport_webform .split > * + * {
+       margin-top:24px !important
+    }
+    #kivaWebToSupport_webform > div.kiva-right {
+        padding:20px;
+        max-width: unset;
+    }
+    #kivaWebToSupport_webform > div.kiva-left picture, #kivaWebToSupport_webform > div.kiva-left img {
+        height: auto;
+    }
+    button[type="submit"] {display: block;width: 100%;}
+}
+
+@media only all and (max-width:40em) {
+    .slice-pt2.slice-pt2 {
+        background: none;
+        background-color: transparent;
+    }
+    .slice-pt2.slice-pt2 .social li a {
+        background: none;
+        background-color: transparent;
+        line-height: inherit;
+        height: auto;
+       
+    }
+    .slice-pt2.slice-pt2 .help li {
+        padding: 0;
+        display: block;
+        text-align: left;
+    }
+    .slice-pt2.slice-pt2 .help li a {
+        padding: 0;
+        display: block;
+        text-align: left;
+        padding: 5px 0;
+        background-color: transparent;
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+@media only all and (max-width:680px) {
+    .flex-form, .flex-form.main-form {
+        display: block;
+    }
+    .flex-form > * {
+        display: block;
+    }
+    .principal[role=navigation] header {width: auto;height: auto;float: none;}
+    .wrapper-menu {display: none;}
+    .slice-pt21 {height: 105px !important;}
+    .slice-pt21::before, .slice-pt21::after {content: "";height: 1px;background-color: #ffffff;display: block;position: absolute;top: 49%;width: calc(50vw - 75px);} 
+    .slice-pt21::before {left: 15px;}
+    .slice-pt21::after {right: 15px;}
+
+    .mmactive .slice-pt21 {height: 60px !important;}
+
+    .principal[role=navigation] .logo {
+        position: absolute;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        top: 10px;
+        margin:auto;
+        width: 78px;
+        height: 84px;
+    } 
+    .principal[role=navigation] .logo a .logo-no-img {
+        width: 78px;
+        height: 84px;
+    }
+    .mmactive .principal[role=navigation] .logo, .mmactive .principal[role=navigation] .logo a .logo-no-img {
+        width: 37px;
+        height: 40px;
+    }
+    .sm_menu_outer {top:60px}
+
+    .main-form.contact-form-box {
+        padding-top:105px;
+        margin-left: -20px;
+        margin-right: -20px;
+        width: auto;
+    }
+    .footer {padding: 5vh 0 2vh 0;}
+    .main-form .right .car-informations {padding-top: 20px;padding-bottom:20px;}
+    .main-form .right .car-informations img {
+        margin-bottom: 0;
+    }
+    .mobileSubTitle {
+        display: block !important;
+        margin-bottom: 20px;
+        line-height: 18px;
+    }
+    .main-form .bottom {
+        padding-top: 20px;
+    }
+    .main-form .bottom .left {
+        padding: 0;
+    }
+    .main-form .bottom .left .multiple .box-input {
+        width: 100%;
+        clear: both;
+    }
+    .aggreement-checkbox {
+        margin:20px 0 0;
+        text-align: left;
+    }
+    .main-form .bottom .left .optionalContainer label {font-size: .85rem;position: relative;z-index: 1;padding-left: 28px;min-height: 20px;}
+    .main-form .bottom .left .optionalContainer label:hover {z-index: 2;}
+    .main-form .bottom .left .optionalContainer label [type="checkbox"], .main-form .bottom .left .optionalContainer label [type="radio"] {position: absolute;z-index: 1;left: 0;top: 0;margin:0}
+    .main-form .bottom .left label > p:not(.SelectBox):not(.no-match) {
+        width: 18px;
+        height: 18px;
+        background-size: 100% auto;
+    }
+    .main-form .bottom .left label > p:not(.SelectBox):not(.no-match) {position: static;}
+    .main-form .bottom .left label > p:not(.SelectBox) span, .main-form .bottom .left label > p:not(.SelectBox):hover span {
+        left: 0;
+        right: 0;
+        top: 150%;
+        width: calc(100vw - 40px);
+    }
+    .main-form .bottom .left label > p:not(.SelectBox):hover span  {
+        top:110%;
+    }
+    /*form[action*="satissonrasi"], form[action*="satis"] {display: none;}*/
+    .main-form{
+        padding-top:100px;
+        margin-top: 0;
+    }
+    .main-form .form-left .car-informations img{
+        width:100%;
+    }
+    .main-form .right{
+        width:100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .main-form .form-left{
+        width:100%;
+        margin:0;
+    }
+    .main-form .bottom .left{
+        width:100%;
+    }
+    .main-form .bottom .right{
+        width:100%;
+        margin-top:0;
+        padding: 0;
+    }
+    .main-form .bottom .right .btn-cta{
+        margin:0 auto;
+    }
+    .main-form .bottom .left label {
+        font-size:.75rem;
+    }
+    /*.main-form .bottom .left label:nth-child(2){
+        font-size:.75rem;
+    }*/
+    .main-form .right .buttons{
+        text-align:center;
+        display:none!important;
+    }
+    .main-form .right .firsat-buttons{
+        text-align:center;
+        display:block!important;
+    }
+    .main-form .right .detail p{
+        font-size:22px;
+    }
+    .main-form .right .detail p span{
+        font-size:18px;
+    }
+    /*.main-form .right .detail ul{
+        display:none;
+    }*/
+    .main-form .right .buttons a{
+        display: inline-block;
+        padding: 14px 10px;
+        font-size: 14px;
+    }
+    .main-form .bottom .left .yetkili{
+        display:block;
+    }
+    .main-form .bottom .box-input{
+        margin-bottom:1rem;
+    }
+    .main-form .bottom .box-input input{
+        margin:0;
+    }
+    .ontalep-main .bottom{
+        margin-top:-30px;
+    }
+}
+/*POPUP CSS*/
+        .main-popup{
+    padding:20px 0 0 0
+}
+.main-popup .top .left{
+    min-height: inherit;
+    max-height: none;
+    width:40%;
+    text-align:center;
+}
+.main-popup .top .left img{
+    height:auto;
+    width:75%;
+    margin:0 auto;
+}
+.main-popup .top .right{
+    width:60%;
+    min-height: inherit;
+    max-height: none;
+}
+.main-popup .top .right .top{
+    background:#fff;
+    min-height:inherit;
+    max-height:none;
+    padding: 10px 20px;
+}
+.main-popup .top .right .top p{
+    padding:40px 40px 0 40px;
+    font-size:20px;
+    color:#0866c2;
+    font-weight:bold;
+}
+.main-popup .top .right .bottom{
+    background:#fff;
+    min-height: inherit;
+    max-height: none;
+    padding: 5px 20px;
+}
+.main-popup .bottom ul li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 16px;
+    color: #142032;
+    margin-bottom: 5px;
+}
+.main-popup .buttons{
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.main-popup .buttons a{
+    color: #fff!important;
+    background: #00A3E0;
+    font-size: 16px;
+    padding: 14px 20px;
+    border-bottom: 2px solid #0866c2;
+    margin-right: 20px;
+    display:inline-block;
+}
+.main-popup .form{
+    padding:0 40px;
+    text-align:center;
+}
+.main-popup .form h1 {
+    font-size: 18px;
+    color: #143d5f;
+    font-family: peugeotbold;
+    text-align: center;
+    padding: 10px 0;
+}
+.main-popup .optionalContainer{
+    margin-bottom:10px;
+}
+.main-popup .optionalContainer .item{
+    width:30%; 
+    display:inline-block;
+}
+.main-popup .optionalContainer .item input{
+    border: 1px solid #b4b2bd;
+    background-color: #fff;
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+}
+
+.main-popup .form .left{
+    width:100%;
+}
+.main-popup .form .left .item.col-2 input {
+    width: 49%;
+    float: left;
+    padding:7px 10px;
+}
+.main-popup .form .left .item input{
+    padding:7px 10px;
+}
+.main-popup .form .left .item.col-2 input:last-child{
+    float:right;
+}
+.main-popup .form .left .item.col-2 select{
+    float:left;
+    width:49%;
+    border: 1px solid #d1d1d1;
+    box-shadow: inset 0 1px 1px #d1d1d1;
+}
+.main-popup .form .left .item select{
+    border: 1px solid #d1d1d1;
+    box-shadow: inset 0 1px 1px #d1d1d1;
+    padding:7px 10px
+}
+.main-popup .form .left .item.col-2 select:last-child{
+    float:right;
+}
+.main-popup .form .left .item{
+    width:70%;
+}
+.main-popup .form .right{
+    width:100%;
+}
+.main-popup .form .right .check-terms{
+    font-style:normal;
+}
+.main-popup .top .right .top ul li {
+    padding: 8px 22px;
+    border: none;
+    color:#0866c2;
+    font-size:24px;
+}
+.main-popup .thanks {
+    width: 50%;
+    text-align: center;
+    padding-top: 30px;
+}
+.main-popup .yeni-left{
+    width:50%!important;
+}
+.main-popup .thanks h2{
+    color:#0866c2;
+    text-transform:none;
+    font-weight:normal;
+}
+.main-popup .btn-send{
+    margin-top:10px;
+}
+
+.satissonrasi .promo img{
+    width:100%;
+}
+.satissonrasi .satis_txt {
+padding: 40px;
+}
+.satissonrasi .satis_txt h1{
+    color:#000000;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+
+.satissonrasi .bottom {
+    background: #efefef;
+    position:relative;
+    padding:75px 50px 50px 50px;
+}
+.satissonrasi .bottom .left h3{
+    text-transform:none;
+    text-align: left;
+}
+
+.satissonrasi .bottom .right{
+    padding:0;
+    margin:0;
+}
+
+.satissonrasi .banner-offer{
+    height: auto;
+    width: 100%;
+}
+
+.satissonrasi .banner-offer-mobile {
+    display: none;
+    height: auto;
+    width: 100%;
+}
+
+.satissonrasi .banner-offer img {
+    margin-top: 35px;
+}
+
+.satissonrasi .banner-offer-mobile img {
+    margin-top: 35px;
+}
+
+.satis_close {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 40px;
+    color: #007edb;
+}
+
+.satissonrasi .select_bayi {
+    padding: 20px;
+    background: #efefef;
+    margin-bottom: 20px;
+}
+.satissonrasi .select_bayi h4{
+    font-size:20px;
+    font-weight:bold;
+}
+.satissonrasi .select_bayi .btn_bayicall{
+    font-size: 14px;
+    color: #ffffff;
+    background: #007edb;
+    display: inline-block;
+    padding: 14px;
+    min-width: 180px;
+    margin: 20px 0;
+    border-bottom:2px solid #0062c5;
+    position:unset;
+}
+.subheader{
+    line-height: 30px;
+    letter-spacing: .1rem;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.termsHead4{
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 5px;
+}
+#termsContainer li, #termsContainer p {
+    font-family: newpeugeot,Helvetica Neue,Helvetica,Roboto,Arial;
+    color: #787b80;
+    padding-bottom: 20px;
+    text-align: left;
+    font-style: italic;
+    font-weight: 700 !important;
+}
+#termsContainer p {
+    font-weight: lighter;
+    line-height: 1.45rem;
+    text-rendering: optimizeLegibility;
+    font-size: 15px!important;
+}
+#termsContainer li {
+    font-size: 18px;
+}
+
+/*ihm pop-up*/
+.ihm-popup-overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.ihm-popup {
+    overflow: auto;
+    position: fixed;
+    z-index: 2147483647;
+    width: 600px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    zoom: 1;
+    background: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.ihm-text-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 32px;
+    font-family: 'Peugeot New';
+}
+
+.ihm-title {
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+    padding-right: 50px;
+    padding-left: 16px;
+    margin: 0;
+}
+
+.ihm-description{
+    font-size: 12px;
+    color: #787b80;
+    padding: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.ihm-description a{
+    color: #000;
+    text-decoration: underline!important;
+
+}
+
+.ihm-description a:hover {
+    color: #000!important;
+}
+
+.ihm-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.ihm-btns {
+    color: #fff;
+    font-size: 7.7px;
+    background-color: #00A3E0;
+    font-weight: 800;
+    padding: 16px 20px;
+}
+
+.ihm-buttons a:first-child{
+    margin-right: 2.5px;
+}
+
+.ihm-buttons a:last-child {
+    margin-left: 2.5px;
+}
+
+/*ihm preferences*/
+.ihm-pref-outer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ihm-pref-bg {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ihm-set-pref {
+    height: 449px;
+    margin: 16px 32px;
+}
+
+.ihm-pref-title {
+    font-size: 25px;
+    color: #000;
+    font-weight: 500;
+    text-align: left;
+}
+
+.ihm-pref-desc {
+    font-size: 12px;
+    color: #787b80;
+    line-height: 20px;
+    text-align: left;
+}
+
+
+.ihm-pref-table {
+    font-size: 14px;
+    border-collapse: separate;
+    border-spacing: 0px;
+    margin: auto;
+    width: 100%;
+    border-top: 1px solid rgb(191, 191, 191);
+    border-left: 1px solid rgb(191, 191, 191);
+    border-right: 1px solid rgb(191, 191, 191);
+}
+
+.ihm-pref-tbody {
+    text-align: left;
+    max-width: 600px;
+    padding-top: 0px;
+    z-index: 40;
+    height: auto;
+    display: block;
+    overflow-y: auto;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+.ihm-pref-td-text {
+    border-bottom: 1px solid rgb(191, 191, 191)!important;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    vertical-align: middle;
+}
+
+.ihm-pref-td-checkbox {
+    vertical-align: middle;
+    padding-right: 32px;
+    border-bottom: 1px solid rgb(191, 191, 191)!important;
+}
+
+.toggle{
+    position: relative;
+}
+
+.toggle input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.ihm-slider {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #ababab;
+    transition: 0.2s;
+    width: 38px;
+    height: 20px;
+}
+
+.ihm-slider:before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    transition: 0.2s;
+    top: 3px;
+    left: 3px;
+}
+
+.toggle input:checked + .ihm-slider {
+    background-color: #6FD4E4;
+}
+
+.toggle input:checked + .ihm-slider:before {
+    transform: translate(18px);
+}
+
+.toggle input:checked + .ihm-slider:after {
+    content: "\2714";
+    color: #fff;
+    position: absolute;
+    left: 4px;
+    top: -1px;
+    font-weight: 400;
+    height: 14px;
+    width: 14px;
+}
+
+.ihm-slider.round {
+    border-radius: 60px;
+}
+
+    .ihm-slider.round:before {
+        border-radius: 60px;
+    }
+
+.ihm-pref-td-info {
+    padding-right: 20px;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-bottom: 1px solid rgb(191, 191, 191)!important;
+}
+
+
+
+.ihm-pref-objection {
+    color: #ababab;
+    text-decoration: underline !important;
+}
+
+.ihm-pref-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 42px;
+}
+
+.ihm-pref-btns {
+    color: #fff;
+    font-size: 7.7px;
+    background-color: #00A3E0;
+    font-weight: 800;
+    padding: 16px 21px;
+}
+
+.ihm-pref-back-btn {
+    color: #000;
+    font-size: 10px;
+    padding: 15px 21px;
+    text-decoration: underline!important;
+}
+
+.ihm-info-table-one-mobile, .ihm-info-table-two-mobile, .ihm-info-table-three-mobile {
+    display: none!important;
+}
+/*ihm preferences*/
+
+/*ihm-media*/
+@media only all and (max-width:680px){
+    .ihm-popup {
+        width: 90%;
+        height: 85%;
+    }
+    .ihm-text-div{
+        margin: 20px;
+    }
+
+    .ihm-description{
+        margin-top: 20px;
+    }
+
+    .ihm-buttons{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .ihm-btns{
+        width: 87%;
+        text-align: center;
+        font-size: 8.7px;
+    }
+
+    .ihm-set-pref-btn{
+        margin-left: 0px!important;
+        margin-top: 10px;
+    }
+
+    .ihm-set-pref{
+        margin: 16px 20px;
+        
+    }
+
+    .ihm-pref-desc{
+        margin-top: 26px;
+    }
+
+    .ihm-pref-container{
+        margin-top: 26px;
+    }
+
+    .ihm-pref-buttons {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .ihm-pref-btns {
+        width: 100%;
+        text-align: center;
+        font-size: 8.7px;
+    }
+
+    .ihm-info-table-one, .ihm-info-table-two, .ihm-info-table-three {
+        display: none !important;
+    }
+    .ihm-info-table-one-mobile, .ihm-info-table-two-mobile, .ihm-info-table-three-mobile {
+        display: table !important;
+    }
+}
+/*ihm-media*/
+/*ihm-info-module*/
+.ihm-info-one, .ihm-info-two, .ihm-info-three, .ihm-opposition {
+    z-index: 3;
+    animation: 0.16s ease 0s 1 normal none running psac_sidebar_right;
+    overflow: unset;
+    position: absolute;
+    background: inherit;
+    background-color: #fff;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 90%;
+    display: block;
+    border-left: 5px solid #3c3947;
+}
+
+.ihm-info-detail-cont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.ihm-info-arrow {
+    animation: 0.16s ease 0s 1 normal none running psac_sidebar_elem_right;
+    right: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 51%;
+    border-radius: 5px 0px 0px 5px;
+    color: rgb(255, 255, 255);
+    padding: 3px 7px 5px 7px;
+    font-size: 20px;
+    margin-right: 0px;
+    background-color: #000;
+}
+
+.fa-angle-right{
+    font-weight: bold!important;
+}
+
+.ihm-info-detail-title {
+    font-family: 'Peugeot New';
+    text-align: center;
+    font-size: 24px ;
+    font-weight: 300 ;
+    text-transform: uppercase;
+    padding: 42px 27px 42px 27px;
+    border: 0px solid #ececee ;
+}
+
+.ihm-info-table-container{
+    overflow: scroll;
+}
+
+.ihm-info-table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    border-width: 2px !important;
+    border-color: #162133 !important;
+    table-layout: auto;
+}
+
+.ihm-info-table tr th, .ihm-info-table tr td {
+    font-size: 12px !important;
+    padding: 5px;
+    border: 1px solid rgb(191, 191, 191);
+    vertical-align: middle;
+}
+.ihm-info-table tr th:last-child, .ihm-info-table tr td:last-child {
+    width: 70%
+}
+
+.ihm-info-thead {
+    width: 100%;
+}
+
+.ihm-info-table-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 12px;
+}
+
+.ihm-info-table-container::-webkit-scrollbar-thumb {
+    background-color: #ababab;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.ihm-info-table-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #ffffff;
+}
+
+.ihm-load-wrap {
+    margin: 100px auto;
+    width: 130px;
+}
+
+.ihm-load-circle {
+    position: relative;
+    overflow: hidden;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+@keyframes border {
+    0% {
+        box-shadow: 35px -35px 0 1px #fff, -35px -35px 0 1px #fff, -35px 35px 0 1px #fff, 35px 35px 0 1px #fff, 0 0 0 1px rgb(100,100,100);
+    }
+
+    25% {
+        box-shadow: 0 -75px 0 1px #fff, -35px -35px 0 1px #fff, -35px 35px 0 1px #fff, 35px 35px 0 1px #fff, 0 0 0 1px rgb(100,100,100);
+    }
+
+    50% {
+        box-shadow: 0 -75px 0 1px #fff, -75px 0px 0 1px #fff, -35px 35px 0 1px #fff, 35px 35px 0 1px #fff, 0 0 0 1px rgb(100,100,100);
+    }
+
+    75% {
+        box-shadow: 0 -75px 0 1px #fff, -75px 0px 0 1px #fff, 0px 75px 0 1px #fff, 35px 35px 0 1px #fff, 0 0 0 1px rgb(100,100,100);
+    }
+
+    100% {
+        box-shadow: 0 -75px 0 1px #fff, -75px 0px 0 1px #fff, 0px 75px 0 1px #fff, 70px 17.5px 0 1px #fff, 0 0 0 1px rgb(100,100,100);
+    }
+}
+
+/*ihm-info-module*/
+/*ihm pop-up*/
+@media only all and (min-width:968px) {
+    a .btn_bayicall {display: none !important;}
+}
+@media only all and (max-width:680px) {
+    .principal[role=navigation] header {
+        margin:0;
+    }
+    .main-popup .top{
+        display:block;
+    }
+    .main-popup .top .left{
+        width:100%;
+    }
+
+    .main-popup .top .right{
+        width:100%;
+    }
+    .main-popup .top .right .bottom{
+        display:none;
+    }
+    .main-popup .form{
+        padding:10px;
+    }
+    .main-popup .top .right .top p{
+        margin:0;
+        font-size:18px;
+        text-align:center;
+    }
+    .main-popup .form h1{
+        margin:0 0 20px 0;
+        padding:5px 20px;
+        font-size:20px
+    }
+    .main-popup .optionalContainer .item{
+        width: 49%;
+    }
+    .main-popup .optionalContainer .item label{
+        font-size:.75rem;
+    }
+    .main-popup .form .left .item{
+        width:90%;
+    }
+    .main-popup .form .right {
+        width: 95%;
+    }
+    .main-popup .top .right .top ul li {
+        padding: 8px 10px;
+        border: none;
+        font-weight:bold;
+        margin:0;
+        color:#0866c2;
+        font-size:20px;
+    }
+    .satissonrasi .column-one > h3 {margin-right: 40px;}
+    .satissonrasi .satis_txt {
+        margin: 0;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .satissonrasi .satis_buttons .btn_mobil {
+        display: block;
+    }
+    .satissonrasi .bottom{
+        padding:20px;
+        margin:0 -20px 30px -20px;
+        /*background-color: transparent;*/
+    }
+    .satissonrasi .satis_buttons > a {
+        width: auto;
+        display: block;
+    }
+    .satissonrasi .satis_buttons .satis_close {
+        font-size: 24px;
+        position: absolute;
+        background: none;
+        display: block;
+        padding: 0;
+        min-width: initial;
+        margin: 0;
+        border: none;
+        color: #007edb;
+        width:auto;
+        right: 20px;
+    }
+    .satissonrasi .satis_buttons .satis_close:before{
+        display:none;
+    }
+    .satissonrasi .satis_buttons .terms:before{
+        display:none;
+    }
+    .satissonrasi > .main-form {
+        padding-top: 105px;
+    }
+    .satis_buttons > form {margin: 0 5px;}  
+    .promo.flex-left {margin-left: -20px;margin-right: -20px;width: auto;}
+    .promo .flex-img {height: 33vh;object-position: center bottom;}  
+    .satissonrasi .last-notice {padding: 0;}
+    #satisFormSubmit {display: block;width: 100%;}
+    .main-form .bottom .right.column-two {
+        margin-top: 0;
+    }
+    .multiple > .box-input:last-child {margin-bottom: 0;}
+
+    .satissonrasi .banner-offer {
+        display: none;
+    }
+
+    .satissonrasi .banner-offer-mobile {
+        display: block;
+    }
+
+}

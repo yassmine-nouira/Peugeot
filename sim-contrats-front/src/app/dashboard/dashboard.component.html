@@ -1,0 +1,34 @@
+<body>
+    <mat-card>
+        <b><span>Dashboard</span></b>
+    </mat-card>
+    <br>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title"> Contrats </h2>
+                    <h2 class="title">Nombre total : {{cntdata}} </h2>
+
+                    <p><button class="button" [routerLink]="['/admin/contrat']">Voir Contrats</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <div class="container">
+                    <h2 class="title">Demandes</h2>
+                    <h2 class="title">Nombre total : {{dmddata}} </h2>
+                    <p><button class="button" [routerLink]="['/admin/garantie']">Voir Demandes</button></p>
+                </div>
+            </div>
+        </div>
+
+
+   
+       
+
+
+    </div>
+</body>

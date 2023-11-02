@@ -1,0 +1,84 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row fxLayout="row">
+        <span> {{dialogData.action}} Contrat </span>
+        <span class="spacer"></span>
+        <button class="mat-dialog-close" mat-icon-button mat-dialog-close>
+            <mat-icon>close</mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+<mat-dialog-content class="mat-typography">
+    <form [formGroup]="contratForm" >
+        <div fxFlex fxLayout="column">
+            <div fxLayout="row">
+                <mat-form-field  fxFlex>
+                    <mat-label>Modele Vehicule</mat-label>
+                    <input matInput formControlName="modelev" required>
+                    <mat-error *ngIf="contratForm.controls.modelev.touched && contratForm.controls.modelev.invalid">
+                        <span *ngIf="contratForm.controls.modelev.errors.required" >This field is required</span>
+                    </mat-error>
+                </mat-form-field>    
+            </div> 
+                <div fxLayout="row">
+                <mat-form-field  fxFlex>
+                    <mat-label>Type de contrat</mat-label>
+                    <input matInput formControlName="type" required>
+                    <mat-error *ngIf="contratForm.controls.type.touched && contratForm.controls.type.invalid">
+                        <span *ngIf="contratForm.controls.type.errors.required" >This field is required</span>
+                    </mat-error>
+                </mat-form-field>   
+            </div> 
+            <div fxLayout="row">
+                <mat-form-field  fxFlex>
+                    <mat-label>Durée</mat-label>
+                    <input matInput formControlName="dureeGarantie" required>
+                    <mat-error *ngIf="contratForm.controls.dureeGarantie.touched && contratForm.controls.dureeGarantie.invalid">
+                        <span *ngIf="contratForm.controls.dureeGarantie.errors.required" >This field is required</span>
+                    </mat-error>
+                </mat-form-field>   
+            </div> 
+                <div fxLayout="row">
+                <mat-form-field  fxFlex>
+                    <mat-label>Kilometrage</mat-label>
+                    <input matInput formControlName="km" required>
+                    <mat-error *ngIf="contratForm.controls.km.touched && contratForm.controls.km.invalid">
+                        <span *ngIf="contratForm.controls.km.errors.required" >This field is required</span>
+                    </mat-error>
+                </mat-form-field> 
+            </div> 
+                <div fxLayout="row">
+                <mat-form-field  fxFlex>
+                    <mat-label>PUHT</mat-label>
+                    <input matInput formControlName="puht" required>
+                    <mat-error *ngIf="contratForm.controls.puht.touched && contratForm.controls.puht.invalid">
+                        <span *ngIf="contratForm.controls.puht.errors.required" >This field is required</span>
+                    </mat-error>
+                </mat-form-field> 
+            </div>     
+
+            <div fxLayout="row">
+                <mat-form-field  fxFlex>
+                    <mat-label>PUTTC</mat-label>
+                    <input matInput formControlName="puttc" required>
+                    <mat-error *ngIf="contratForm.controls.puttc.touched && contratForm.controls.puttc.invalid">
+                        <span *ngIf="contratForm.controls.puttc.errors.required" >This field is required</span>
+                    </mat-error>
+                </mat-form-field> 
+            </div>     
+
+        </div>         
+
+    </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-raised-button color="primary" type="submit" (click)="handleSubmit()" [disabled]=" !(contratForm.valid && contratForm.dirty)">
+        <mat-icon>save</mat-icon> {{action}}
+    </button>
+    <button mat-raised-button color="warn" mat-dialog-close>
+        <mat-icon>cancel</mat-icon> Close
+    </button>
+</mat-dialog-actions>
